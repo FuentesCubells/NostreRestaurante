@@ -1,7 +1,15 @@
+@font-face {
+  font-family: "Dahlia";
+  src: url("/assets/Dahlia-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   height: 100%;
   box-sizing: border-box;
 
+  scroll-behavior: smooth;
   background-color: #595840;
 }
 body {
@@ -12,31 +20,28 @@ a {
   text-decoration: none;
   font-family: Dahlia;
 }
-/* HEADER */
-
 .full-container {
   width: 100%;
   margin: 0 auto;
 
   z-index: 1;
 }
+/* HEADER */
+
 .image-container {
   width: auto;
   height: 100%;
 
-  background:   
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ), url("./images/inicio.png");
-  
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/inicio.png");
+
   background-position: center;
   background-size: cover;
 }
 .header-container {
-  max-width: 390px;
+  max-width: 318px;
+  height: auto;
   padding: 20px 36px 12px 36px;
-  position: sticky;
 
   display: flex;
   flex-direction: column;
@@ -44,7 +49,19 @@ a {
   align-items: flex-start;
   align-self: stretch;
 }
+.header-container-sticky {
+  max-width: 318px;
+  height: auto;
+  padding: 20px 36px 12px 36px;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(10px); /* Keep the standard syntax for Safari */
+  -webkit-backdrop-filter: blur(10px); /* Add the WebKit prefix */
+}
 .header-content {
+  height: auto;
   padding: 24px 0px;
 
   display: flex;
@@ -119,11 +136,10 @@ a {
 
 /*Burguer-menu*/
 .burguer-menu {
-  display: flex;
+  display: block;
   justify-content: flex-end;
   align-items: flex-start;
   gap: 24px;
-
 }
 .burguer-icon {
   border: none;
@@ -135,7 +151,6 @@ a {
 
   transition: right 0.3s ease-in-out;
 }
-
 .main-navigation-burguer {
   width: 50%;
   height: 90%;
@@ -149,10 +164,8 @@ a {
 
   color: #121212;
   animation: open 0.5s ease-in;
-  translate: 80% 40%;
-
-  backdrop-filter: blur(5px);
 }
+
 @keyframes open {
   from {
     opacity: 0%;
@@ -173,7 +186,7 @@ a {
 /*Hero */
 
 .hero-container {
-  padding: 20px 36px;
+  padding: 20px 36px 72px 36px;
 
   display: flex;
   flex-direction: column;
@@ -224,7 +237,7 @@ a {
   color: #f5f5f5;
 }
 .hero-content ul li {
-  font-family: Helvetica;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -259,7 +272,7 @@ a {
 
   border-radius: 100000px;
   color: #141414;
-  border: 4px solid #f5f5f5;
+  border: 2px solid #f5f5f5;
 }
 .hero-buttons button:nth-child(1) {
   color: #f5f5f5;
@@ -268,4 +281,461 @@ a {
 .hero-buttons button:nth-child(1):hover {
   color: #141414;
   background-color: #f5f5f5;
+}
+
+/*Reservation*/
+
+.reservation-fullContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+
+  background-color: #fff;
+}
+.reservation-title {
+  padding: 72px 36px 0px 36px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+.reservation-title h2 {
+  margin: 0px;
+
+  font-family: Dahlia;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: capitalize;
+
+  color: #121212;
+}
+.reservation-title p {
+  margin: 0px;
+
+  font-family: Dahlia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  color: #121212;
+}
+.reservation-fullContainer iframe {
+  height: 650px;
+}
+
+.reservation-fullContainer iframe body {
+  background-color: transparent !important;
+}
+
+/*Offer*/
+
+.offer-fullContainer {
+  max-width: 318px;
+  padding: 72px 36px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.offer-container {
+  padding-bottom: 36px;
+
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.offer-title {
+  width: 100%;
+  padding: 24px 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+.offer-title h2 {
+  margin: 0px;
+
+  font-family: Dahlia;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: capitalize;
+
+  color: #f5f5f5;
+}
+.offer-content {
+  width: 100%;
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 56px;
+  align-self: stretch;
+}
+.offer-letter {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+}
+.offer-menu {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+}
+.offer-content div h3 {
+  margin: 0;
+
+  font-family: Dahlia;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  color: #f5f5f5;
+}
+.offer-content div p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  color: #f5f5f5;
+}
+.offer-letter figure {
+  width: 300px;
+  height: 200px;
+  margin: 0;
+}
+.offer-letter figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.offer-letter-buttons {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.menu-button {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: stretch;
+}
+.offer-content div button {
+  padding: 20px 28px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-family: Dahlia;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-transform: capitalize;
+  white-space: nowrap;
+
+  border-radius: 100000px;
+  color: #f5f5f5;
+  border: 2px solid #f5f5f5;
+  background-color: transparent;
+}
+
+/* About */
+.about-fullContainer {
+  padding: 72px 36px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.about-container {
+  padding-bottom: 36px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+}
+.about-title {
+  padding: 24px 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+.about-title h2 {
+  margin: 0px;
+
+  font-family: Dahlia;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: capitalize;
+
+  color: #f5f5f5;
+}
+.about-title p {
+  margin: 0px;
+
+  font-family: Dahlia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  color: #fff;
+}
+
+.about-img figure {
+  width: 300px;
+  height: 200px;
+  margin: 0;
+}
+.about-img figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+.about {
+  padding-bottom: 36px;
+
+  border-bottom: 2px solid #f5f5f5;
+}
+.about h3 {
+  font-family: Dahlia;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px; /* 200% */
+  text-transform: capitalize;
+
+  color: #f5f5f5;
+}
+.about p {
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  color: #f5f5f5;
+}
+
+/*Contact */
+
+.contact-fullContainer {
+  padding: 72px 36px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.contact-container {
+  padding-bottom: 36px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+
+  border-bottom: 2px solid #f5f5f5;
+}
+.contact-title {
+  padding: 24px 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+.contact-title h2 {
+  margin: 0px;
+
+  font-family: Dahlia;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: capitalize;
+
+  color: #f5f5f5;
+}
+.contact-title p {
+  margin: 0px;
+
+  font-family: Dahlia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  color: #fff;
+}
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contact-content iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+.contact-schedule h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  color: #fff;
+}
+.contact-schedule p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  color: #fff;
+}
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+.contact {
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.contact img {
+  width: 25px;
+  height: 25px;
+}
+.contact p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  word-wrap: normal;
+
+  color: #f5f5f5;
+}
+
+/*Footer*/
+
+.footer-fulContainer {
+  padding: 72px 36px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 36px;
+  align-self: stretch;
+
+  background-color: #121212;
+}
+.footer-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex: 1 0 0;
+}
+.contact-footer > .contact-information img {
+  width: 20px;
+  height: 20px;
+}
+.contact-footer > .contact-information {
+  width: fit-content;
+}
+.contact-footer > .contact-information p {
+  font-size: 12px;
+}
+.footer-container .logo {
+  width: fit-content;
+}
+.footer-container .logo a h1 {
+  font-size: 64px;
+}
+.footer-container .logo a h2 {
+  white-space: nowrap;
+  font-size: 24px;
+}
+.LaMida {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LaMida h4 {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: #f5f5f5;
 }

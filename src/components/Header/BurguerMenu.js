@@ -8,6 +8,17 @@ const BurguerMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const scrollToSection = sectionId => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
         <div className="burguer-menu">
             <button className="burguer-icon" onClick={toggleMenu}>
@@ -19,10 +30,10 @@ const BurguerMenu = () => {
             </button>
             {isOpen && (
                 <div className="main-navigation-burguer">
-                    <a href="/">Carta</a>
-                    <a href="/">Somos</a>
-                    <a href="/">Reservas</a>
-                    <a href="/">Contacto</a>
+                    <a onClick={() => scrollToSection('#carta')} href="#carta">Carta</a>
+                    <a onClick={() => scrollToSection('#about')} href="#about">Somos</a>
+                    <a onClick={() => scrollToSection('#reservation')} href="#reservation">Reservas</a>
+                    <a onClick={() => scrollToSection('#contact')} href="#contact">Contacto</a>
                 </div>
             )}
         </div>
