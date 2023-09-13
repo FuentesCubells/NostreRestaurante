@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
             <div className="contact">
               <img src={email} alt="phone icon" />
-              <p>Email: contacto@nostrecocina.com</p>
+              <p><a href="mailto:contacto@nostrecocina.com">contacto@nostrecocina.com</a></p>
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="LaMida">
-        <h4>Web designed and developed by LaMida studio</h4>
+        <h4>Web designed and developed by <a href="mailto:lamidaestudio@gmail.com">LaMida studio</a></h4>
       </div>
     </div>
   );

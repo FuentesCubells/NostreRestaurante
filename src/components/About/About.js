@@ -1,7 +1,75 @@
 import React from "react";
 import us from "./images/Somos.jpg";
 
-const About = () => {
+const About = ({ lenguage }) => {
+  if (lenguage === "EN") {
+    return (
+      <div className="about-fullContainer">
+        <div className="about-container">
+          <div className="about-title" id="about">
+            <h2>Yes, we are young, but we are not a trend or a fashion.</h2>
+            <p>
+              We are the passion of those who, when they cook, commit
+              themselves.
+            </p>
+          </div>
+          <div className="about-img">
+            <figure>
+              <img
+                src={us}
+                alt="Andrés Rengel, Nadia Abramova, and Pamela Martinez"
+              />
+            </figure>
+            <div className="about-content">
+              <div className="about">
+                <h3>Andrés Rengel:</h3>
+                <p>
+                  A Valencian with Andalusian, Castilian, and Aragonese roots.
+                  After studying cooking, he decided to work in various
+                  Michelin-starred restaurants like La Finca, El Celler de Can
+                  Roca, and Arrea to perfect his skills. He eventually entered
+                  the teaching field, instructing vocational training classes.
+                  However, since he began his culinary journey, he had a dream
+                  of opening his own restaurant. Nostre is his most daring and
+                  personal venture, and he is a true gastronomy enthusiast.
+                  Among his hobbies, you'll find him preparing for cooking
+                  competitions, enjoying the mountains, and secretly being quite
+                  the dancer.
+                </p>
+              </div>
+              <div className="about">
+                <h3>Nadia Abramova:</h3>
+                <p>
+                  A programming graduate, Nadia started her culinary studies in
+                  Russia but was drawn to Mediterranean cuisine and its
+                  possibilities. She decided to come to Valencia to further her
+                  culinary education. An avid nature lover, she spends a
+                  significant part of her free time gathering her own herbs and
+                  has become an expert in fermentations. You must definitely try
+                  her lemonades, and if you're lucky, some of her homemade
+                  kombuchas!
+                </p>
+              </div>
+              <div className="about">
+                <h3>Pamela Martínez:</h3>
+                <p>
+                  Born in Colombia but with German roots, Pamela went to Germany
+                  to study cooking at the age of 18. After gaining years of
+                  experience, Pamela decided to step out of the kitchen and
+                  specialize in front-of-house service. She's passionate about
+                  rock climbing, but above all, she loves traveling. She ended
+                  up in Valencia a year ago and fell in love with the city,
+                  making it her home. As a seasoned traveler, Pamela will guide
+                  you throughout the service to ensure you have an unforgettable
+                  experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="about-fullContainer">
       <div className="about-container">
@@ -13,7 +81,7 @@ const About = () => {
           <figure>
             <img
               src={us}
-              alt="Una imagen dónde aparecent Andrés Rengel, Nadia Abramova y Pamela Martinez"
+              alt="Andrés Rengel, Nadia Abramova y Pamela Martinez"
             />
           </figure>
           <div className="about-content">

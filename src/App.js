@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Reservation from "./components/Reservation/Reservation";
@@ -8,17 +8,24 @@ import Oferta from "./components/Oferta/Oferta";
 import About from "./components/About/About";
 
 const App = () => {
+
+  const [lenguage, setLenguage] = useState('')
+
+  const handleLenguage = (len) => {
+    setLenguage(len) 
+  }
+
   return (
     <>
       <div className="image-container">
-          <Header />
-          <Hero />
+          <Header onClick={handleLenguage} lenguage={lenguage} />
+          <Hero lenguage={lenguage}/>
       </div>
-      <Oferta />
-      <About />
-      <Reservation/>
-      <Place />
-      <Footer />
+      <Oferta lenguage={lenguage} />
+      <About lenguage={lenguage}/>
+      <Reservation lenguage={lenguage}/>
+      <Place lenguage={lenguage}/>
+      <Footer lenguage={lenguage} />
     </>
   )
 }
