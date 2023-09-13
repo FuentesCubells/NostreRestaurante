@@ -4,6 +4,7 @@ import carta from "./images/Carta.jpg";
 const Oferta = ({ lenguage }) => {
   if (lenguage === "EN") {
     return (
+
       <div className="offer-fullContainer" id="carta">
         <div className="offer-container">
           <div className="offer-title">
@@ -22,7 +23,7 @@ const Oferta = ({ lenguage }) => {
                 childhood, reflected in a timeless menu proposal.
               </p>
               <div className="offer-letter-buttons">
-                <button>View the Wine Cellar</button>
+                <button>Wine Cellar</button>
                 <button>View the Menu</button>
               </div>
             </div>
@@ -64,7 +65,7 @@ const Oferta = ({ lenguage }) => {
               propuesta atemporal.
             </p>
             <div className="offer-letter-buttons">
-              <button>Ver la bodega</button>
+              <button>Ver La bodega</button>
               <button>Ver la carta</button>
             </div>
           </div>
