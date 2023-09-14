@@ -30,7 +30,7 @@ const Reservation = ({ lenguage }) => {
         id="restaurante-nostre"
         title="Reservas"
         src="https://www.covermanager.com/reservation/module_restaurant/restaurante-nostre/spanish"
-        frameBorder="0"
+        frameborder="0"
         height="550"
         width="100%"
         onload="iFrameResize();"

@@ -561,13 +561,21 @@ a {
 
 .about-img figure {
   width: 100%;
-  height: 400px;
+  height: 500px;
   margin: 0;
+
+  background: url("./images/Somos.jpg");
+  background-position: 50% 60%;
+  background-size: cover;
+
 }
+
 .about-img figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: none;
+
 }
 .about-content {
   display: flex;
@@ -1120,18 +1128,17 @@ a {
 
     color: #fff;
   }
- 
   .about-img figure {
     width: 100%;
-    height: 400px;
+    height: 700px;
     margin: 0;
-  }
-  .about-img figure img {
-    width: 100%;
-    height: 100%;
 
-    object-fit: cover;
+    background: url("./images/Somos.jpg");
+    background-position: 50% 60%;
+    background-size: cover;
+
   }
+  
   .about-content {
     display: flex;
     flex-direction: row;
