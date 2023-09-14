@@ -2,6 +2,14 @@ import React from "react";
 import carta from "./images/Carta.jpg";
 
 const Oferta = ({ lenguage }) => {
+
+  const paragraph = () => {
+      const offerParagraph = document.getElementById('offer-paragraph')
+      const menu = document.getElementById('menu-paragraph')
+
+      menu.style.offsetHeight = offerParagraph.offsetHeight
+  }
+
   if (lenguage === "EN") {
     return (
 
@@ -57,7 +65,7 @@ const Oferta = ({ lenguage }) => {
               <img src={carta} alt="Imagen de la carta de Nostre restaurante" />
             </figure>
             <h3>La carta</h3>
-            <p>
+            <p id='paragraph'>
               El fondo de una olla, cebolla pochando al rescoldo de unas brasas,
               la abuela poniendo la cazuela de barro al fuego, aquellas recetas
               con las que hemos crecido que evocan la forma que hemos tenido de
@@ -72,7 +80,7 @@ const Oferta = ({ lenguage }) => {
           <div className="offer-menu">
             <div className="menu-img"></div>
             <h3>El menú</h3>
-            <p>
+            <p id="paragraph" onClick={() => paragraph()}>
               Es el resultado de los días de compra en el mercado, el cultivo de
               la tierra tras la herencia familiar, el kilometro cero y la
               temporalidad, plasmadas en un menú que varía en consonancia con la
