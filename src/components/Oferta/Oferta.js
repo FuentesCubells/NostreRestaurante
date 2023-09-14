@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import carta from "./images/Carta.jpg";
+import Bodega from "./images/Bodega.pdf"; 
+import Comida from "./images/Comida.pdf";
 
 const Oferta = ({ lenguage }) => {
-
-  const paragraph = () => {
-      const offerParagraph = document.getElementById('offer-paragraph')
-      const menu = document.getElementById('menu-paragraph')
-
-      menu.style.offsetHeight = offerParagraph.offsetHeight
-  }
+  const [menuOpen, setMenuOpen] = useState(false);
+  const handleMenu = () => {
+    const menu = document.getElementById("menu-description");
+    menu.classList.toggle("menu-description-open");
+    setMenuOpen(!menuOpen);
+  };
 
   if (lenguage === "EN") {
     return (
@@ -30,21 +31,30 @@ const Oferta = ({ lenguage }) => {
                 childhood, reflected in a timeless menu proposal.
               </p>
               <div className="offer-letter-buttons">
-                <button>Wine Cellar</button>
-                <button>View the Menu</button>
+                <button><a href={Bodega} target="_blank" >Wine Cellar</a></button>
+                <button><a href={Comida} target="_blank"></a>View the Menu</button>
               </div>
             </div>
             <div className="offer-menu">
-              <div className="menu-img"></div>
-              <h3>The Menu</h3>
-              <p>
-                It's the result of days spent shopping at the market,
-                cultivating the land after generations of family heritage, using
-                local ingredients, and following seasonal availability. All of
-                this is showcased in a menu that changes with the seasons.
-              </p>
+              <div className="offer-title">
+                <h3>The Menu</h3>
+                <p>Based on seasonal products</p>
+              </div>
+              <ul
+                className={`${
+                  menuOpen ? "menu-description-open" : "offer-menu-description"
+                }`}
+                id="menu-description"
+              >
+                <li>Includes:</li>
+                <li>2 Starters</li>
+                <li>Fish, meat, and dessert</li>
+                <li>Water and bread service</li>
+                <li>37 euros per person</li>
+              </ul>
+
               <div className="offer-letter-buttons menu-button">
-                <button>View the Menu</button>
+                <button onClick={handleMenu}>View the Menu</button>
               </div>
             </div>
           </div>
@@ -64,7 +74,7 @@ const Oferta = ({ lenguage }) => {
               <img src={carta} alt="Imagen de la carta de Nostre restaurante" />
             </figure>
             <h3>La carta</h3>
-            <p id='paragraph'>
+            <p id="paragraph">
               El fondo de una olla, cebolla pochando al rescoldo de unas brasas,
               la abuela poniendo la cazuela de barro al fuego, aquellas recetas
               con las que hemos crecido que evocan la forma que hemos tenido de
@@ -72,27 +82,35 @@ const Oferta = ({ lenguage }) => {
               propuesta atemporal.
             </p>
             <div className="offer-letter-buttons">
-              <button>Ver La bodega</button>
-              <button>Ver la carta</button>
+              <button><a href={Bodega} target="_blank">Ver La Bodega</a></button>
+              <button><a href={Comida} target="_blank">Ver La Carta</a></button>
             </div>
           </div>
           <div className="offer-menu">
-            <div className="menu-img"></div>
-            <h3>El menú</h3>
-            <p id="paragraph" onClick={() => paragraph()}>
-              Es el resultado de los días de compra en el mercado, el cultivo de
-              la tierra tras la herencia familiar, el kilometro cero y la
-              temporalidad, plasmadas en un menú que varía en consonancia con la
-              época del año
-            </p>
+            <div className="offer-title">
+              <h3>El menú</h3>
+              <p>Según producto de temporada</p>
+            </div>
+            <ul
+              className={`${
+                menuOpen ? "menu-description-open" : "offer-menu-description "
+              }`}
+              id="menu-description"
+            >
+              <li>Incluye:</li>
+              <li>2 Entrantes</li>
+              <li>Pescado, carne y postre</li>
+              <li>Servicio de agua y pan</li>
+              <li>37 euros por persona</li>
+            </ul>
             <div className="offer-letter-buttons menu-button">
-              <button>Ver el menú</button>
+              <button onClick={handleMenu}>Ver el menú</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 export default Oferta;
