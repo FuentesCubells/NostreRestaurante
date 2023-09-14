@@ -79,10 +79,7 @@ const About = ({ lenguage }) => {
         </div>
         <div className="about-img">
           <figure>
-            <img
-              src={us}
-              alt="Andrés Rengel, Nadia Abramova y Pamela Martinez"
-            />
+           
           </figure>
           <div className="about-content">
             <div className="about">
