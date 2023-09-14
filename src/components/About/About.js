@@ -68,7 +68,7 @@ const About = ({ lenguage }) => {
           </div>
         </div>
       </div>
-    );
+    )
   }
   return (
     <div className="about-fullContainer">

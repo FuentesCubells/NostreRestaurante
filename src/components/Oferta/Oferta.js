@@ -12,7 +12,6 @@ const Oferta = ({ lenguage }) => {
 
   if (lenguage === "EN") {
     return (
-
       <div className="offer-fullContainer" id="carta">
         <div className="offer-container">
           <div className="offer-title">
@@ -93,7 +92,7 @@ const Oferta = ({ lenguage }) => {
         </div>
       </div>
     </div>
-  );
+  )
 };
 
 export default Oferta;
