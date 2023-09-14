@@ -22,7 +22,7 @@ const Hero = ({lenguage}) => {
                     </div>
                 </div>
                 <div className='hero-buttons'>
-                    <button>See the Menu</button>
+                    <button><a href="#carta">See the Menu</a></button>
                     <button className='reservar'><a href='#reservation'>Reserve</a></button>
                 </div>
             </div>
@@ -48,7 +48,7 @@ const Hero = ({lenguage}) => {
                 </div>
             </div>
             <div className='hero-buttons'>
-                <button>Ver La Carta</button>
+                <button><a href="#carta">Ver La Carta</a></button>
                 <button className='reservar'><a href='#reservation'>Reservar</a></button>
             </div>
         </div>
