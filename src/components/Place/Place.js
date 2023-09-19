@@ -49,8 +49,8 @@ const Place = ({ lenguage }) => {
                 <div className="contact">
                   <img src={email} alt="phone icon" />
                   <p>
-                    <a href="mailto:contacto@nostrecocina.com">
-                      contacto@nostrecocina.com
+                    <a href="mailto:nostre@cocinaquesomos.com">
+                      nostre@cocinaquesomos.com
                     </a>
                   </p>
                 </div>
@@ -99,7 +99,7 @@ const Place = ({ lenguage }) => {
             <div className="contact-information">
               <div className="contact">
                 <img src={phone} alt="phone icon" />
-                <p>665430073</p>
+                <p>+34 603 11 20 49</p>
               </div>
               <div className="contact">
                 <img src={map} alt="phone icon" />
@@ -108,8 +108,8 @@ const Place = ({ lenguage }) => {
               <div className="contact">
                 <img src={email} alt="phone icon" />
                 <p>
-                  <a href="mailto:contacto@nostrecocina.com">
-                    contacto@nostrecocina.com
+                  <a href="mailto:nostre@cocinaquesomos.com">
+                    nostre@cocinaquesomos.com
                   </a>
                 </p>
               </div>
