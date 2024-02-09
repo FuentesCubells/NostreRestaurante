@@ -20,6 +20,9 @@ a {
   text-decoration: none;
   font-family: Dahlia;
 }
+button > a:hover{
+  color: #121212;
+}
 .full-container {
   width: 100%;
   margin: 0 auto;
@@ -271,7 +274,7 @@ a {
 }
 .hero-buttons button {
   width: 137px;
-  padding: 20px 28px;
+  padding: 12px 20px;
 
   display: flex;
   flex-direction: column;
@@ -289,16 +292,15 @@ a {
   white-space: nowrap;
 
   border-radius: 100000px;
-  color: #141414;
+  color: #f5f5f5;
   border: 2px solid #f5f5f5;
   cursor: pointer;
 }
 .hero-buttons button:nth-child(1) {
-  color: #f5f5f5;
   background-color: transparent;
 }
 .hero-buttons button:nth-child(1):hover {
-  color: #141414;
+  color: #141414 ;
   background-color: #f5f5f5;
 }
 .reservar a {
@@ -446,10 +448,22 @@ a {
 
   color: #f5f5f5;
 }
-
+.menu-img {
+  width: 100%;
+}
+.menu-img > figure{
+  width: 100%;
+  height: 444px;
+  margin: 0;
+}
+.menu-img > figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .offer-letter figure {
   width: 100%;
-  height: 200px;
+  height: 444px;
   margin: 0;
 }
 .offer-letter figure img {
@@ -478,7 +492,7 @@ a {
   align-self: stretch;
 }
 .offer-content div button {
-  padding: 20px 28px;
+  padding: 12px 20px;
 
   display: flex;
   flex-direction: column;
@@ -660,33 +674,33 @@ a {
 
 .about-img figure {
   width: 100%;
-  height: 500px;
+  height: fit-content;
   margin: 0;
-
-  background: url("./images/Somos.jpg");
-  background-position: 50% 60%;
-  background-size: cover;
 }
 
 .about-img figure img {
   width: 100%;
-  height: 100%;
+  height: 545px;
   object-fit: cover;
-  display: none;
 }
 .about-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 24px;
   align-self: stretch;
 }
 .about {
   padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 
   border-bottom: 2px solid #f5f5f5;
 }
 .about h3 {
+  margin: 0;
   font-family: Dahlia;
   font-size: 32px;
   font-style: normal;
@@ -832,7 +846,7 @@ a {
 }
 .contact-title img {
   width: 100%;
-  max-height: 200px;
+  max-height: 350px;
   height: auto;
 
   object-fit: cover;
@@ -898,8 +912,103 @@ a {
   color: #f5f5f5;
 }
 
-/*Desktop*/
+.menu-list {
+  width: 100%;
+  padding: 0px;
 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+.menu-list ul {
+  padding: 0px;
+}
+.menu-title {
+  font-size: 24px;
+}
+.menu-0, .menu-1{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  color: #f5f5f5;
+  text-align: left !important;
+}
+.menu-0  > strong, .menu-1  > strong  {
+  font-family: Dahlia;
+}
+.menu-0 ul li, .menu-1 ul li  {
+  font-family: "Montserrat", sans-serif;
+  text-align: left !important;
+  list-style: none;
+}
+.menu-1 p {
+  text-align: left;
+}
+.menu-0-buttons, .menu-1-buttons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.menu-0-buttons > button:hover, .menu-1-buttons > button:hover {
+  color: #141414;
+  background-color: #f5f5f5;
+}
+.menu-0-buttons > button:hover > a, .menu-1-buttons > button:hover > a {
+  color: #141414;
+
+}
+.menu-0-buttons > button, .menu-1-buttons > button{
+  flex: 1;
+}
+
+@media(max-width: 624px){
+  .offer-letter-buttons{
+    flex-direction: column;
+  }
+  .offer-letter-buttons > button{
+    width: 100%;
+  }
+  .about {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .about-data {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .about figure {
+    flex: 1;
+  }
+}
+
+@media(max-width: 950px) and (min-width: 625px){
+  .about {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .about-data {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .about figure {
+    flex: 1;
+  }
+}
+
+/*Desktop*/
 @media (min-width: 1010px) {
   .image-container {
     width: auto;
@@ -1093,7 +1202,7 @@ a {
     align-self: stretch;
     gap: 48px;
   }
-  .hero-buttons button:nth-child(1):hover {
+  .hero-buttons button:nth-child(1):hover{
     color: #141414;
     background-color: #f5f5f5;
   }
@@ -1121,7 +1230,7 @@ a {
     width: 100%;
     margin-top: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     gap: 56px;
     align-self: stretch;
@@ -1152,11 +1261,6 @@ a {
     object-fit: cover;
   }
 
-  .menu-img {
-    width: 100%;
-    height: 200px;
-    background-color: transparent;
-  }
   .offer-title {
     padding: 0;
 
@@ -1196,6 +1300,10 @@ a {
   .offer-letter-buttons button:hover {
     color: #141414;
     background-color: #f5f5f5;
+  }
+  .offer-letter-buttons button:hover > a {
+    color: #141414;
+
   }
   .modal {
     display: none;
@@ -1358,24 +1466,19 @@ a {
   }
   .about-img figure {
     width: 100%;
-    height: 700px;
+    /*height: 700px;*/
     margin: 0;
-
-    background: url("./images/Somos.jpg");
-    background-position: 50% 60%;
-    background-size: cover;
   }
 
   .about-content {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     gap: 24px;
     align-self: stretch;
   }
   .about {
-    height: 420px;
     border: none;
   }
   .reservation-fullContainer {
