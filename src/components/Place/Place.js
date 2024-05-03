@@ -29,14 +29,13 @@ const Place = ({ lenguage }) => {
               ></iframe>
             </div>
             <div className="contact-text">
-              <div className="contact-schedule">
+              {/* <div className="contact-schedule">
                 <h3>Opening Hours:</h3>
                 <p>
-                  From Tuesday to Saturday for lunch from 13:00 to 15:30
-                  <br />
-                  From Thursday to Saturday for dinner from 20:30 to 22:00
+                La Barra de Nostre: Breakfasts, lunches and tapas from Monday to Thursday 9:30 to 14:30
                 </p>
-              </div>
+                <p>Nostre cocina: Lunches and dinners, Thursdays from 20:30 to 23:00 Fridays and Saturdays from 13:30 to 17:00 and 20:30 to 23:00</p>
+              </div> */}
               <div className="contact-information">
                 <div className="contact">
                   <img src={phone} alt="phone icon" />
@@ -89,13 +88,13 @@ const Place = ({ lenguage }) => {
             ></iframe>
           </div>
           <div className="contat-text">
-            <div className="contact-schedule">
+            {/* <div className="contact-schedule">
               <h3>Horario:</h3>
               <p>
-                De martes a sábado en servicio de comidas de 13:00 a 15:30 De
-                jueves a sábado en servicio de cenas de 20:30 a 22:00
+                La Barra de Nostre: Desayunos, almuerzos y tapitas de lunes a jueves 9:30 a 14:30 
               </p>
-            </div>
+              <p>Nostre cocina: Comidas y cenas, Jueves de 20:30 a 23:00 viernes y sábados de 13:30 a 17:00 y 20:30 a 23:00</p>
+            </div> */}
             <div className="contact-information">
               <div className="contact">
                 <img src={phone} alt="phone icon" />

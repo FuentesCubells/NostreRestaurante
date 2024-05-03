@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Dahlia";
-  src: url("/assets/Dahlia-Medium.woff2") format("woff2");
+  src: url("./assets/Dahlia-Medium.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -12,17 +12,21 @@ html {
   scroll-behavior: smooth;
   background-color: #595840;
 }
+
 body {
   margin: 0 auto;
 }
+
 a {
   color: #f5f5f5;
   text-decoration: none;
   font-family: Dahlia;
 }
-button > a:hover{
+
+button>a:hover {
   color: #121212;
 }
+
 .full-container {
   width: 100%;
   margin: 0 auto;
@@ -40,6 +44,7 @@ button > a:hover{
   background-position: center;
   background-size: cover;
 }
+
 .header-container {
   max-width: 100%;
   height: auto;
@@ -54,6 +59,7 @@ button > a:hover{
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
+
 .header-container-sticky {
   max-width: 100%;
   height: auto;
@@ -67,6 +73,7 @@ button > a:hover{
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
+
 .header-content {
   height: auto;
   padding: 24px 0px;
@@ -86,7 +93,8 @@ button > a:hover{
   flex-direction: column;
   align-items: center;
 }
-.logo > a > h1 {
+
+.logo>a>h1 {
   margin: 0;
 
   text-align: center;
@@ -96,7 +104,8 @@ button > a:hover{
   line-height: normal;
   text-transform: capitalize;
 }
-.logo > a > h2 {
+
+.logo>a>h2 {
   margin: 0;
 
   font-size: 18px;
@@ -124,12 +133,14 @@ button > a:hover{
 
   color: #f5f5f5;
 }
+
 .main-navigation {
   display: none;
   justify-content: flex-end;
   align-items: flex-start;
   gap: 24px;
 }
+
 .language-navigation {
   display: flex;
   justify-content: flex-end;
@@ -137,9 +148,10 @@ button > a:hover{
   gap: 16px;
 }
 
-.header-navigation > div > a:hover {
+.header-navigation>div>a:hover {
   text-decoration: underline;
 }
+
 .language-navigation button {
   color: #f5f5f5;
 
@@ -161,12 +173,14 @@ button > a:hover{
   background-color: transparent;
   border: 0;
 }
+
 .burguer-icon img {
   width: 30px;
   height: 30px;
 
   background-color: transparent;
 }
+
 .menu-nav {
   display: none;
 }
@@ -175,6 +189,7 @@ button > a:hover{
   font-size: 24px;
   list-style: none;
 }
+
 .menu-nav-open {
   width: 100%;
 
@@ -191,8 +206,10 @@ button > a:hover{
     max-height: 0;
     opacity: 0;
   }
+
   to {
-    max-height: 500px; /* Adjust the max height as needed */
+    max-height: 500px;
+    /* Adjust the max height as needed */
     opacity: 1;
   }
 }
@@ -208,6 +225,7 @@ button > a:hover{
   gap: 36px;
   align-self: stretch;
 }
+
 .hero-content {
   padding: 24px 0px;
 
@@ -219,23 +237,28 @@ button > a:hover{
 
   border-bottom: 2px solid #f5f5f5;
 }
+
 .hero-img {
   display: none;
 }
+
 .hero-text {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
 .hero-content h1 {
   font-family: Dahlia;
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
-  line-height: 32px; /* 80% */
+  line-height: 32px;
+  /* 80% */
 
   color: #f5f5f5;
 }
+
 .hero-content ul {
   margin: 0 auto;
   padding: 0;
@@ -248,6 +271,7 @@ button > a:hover{
 
   list-style: none;
 }
+
 .hero-content ul li span {
   font-family: Dahlia;
   font-size: 24px;
@@ -257,6 +281,7 @@ button > a:hover{
 
   color: #f5f5f5;
 }
+
 .hero-content ul li {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -266,12 +291,14 @@ button > a:hover{
 
   color: #f5f5f5;
 }
+
 .hero-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
 }
+
 .hero-buttons button {
   width: 137px;
   padding: 12px 20px;
@@ -296,13 +323,16 @@ button > a:hover{
   border: 2px solid #f5f5f5;
   cursor: pointer;
 }
+
 .hero-buttons button:nth-child(1) {
   background-color: transparent;
 }
+
 .hero-buttons button:nth-child(1):hover {
-  color: #141414 ;
+  color: #141414;
   background-color: #f5f5f5;
 }
+
 .reservar a {
   color: #121212;
 }
@@ -318,6 +348,7 @@ button > a:hover{
 
   background-color: #fff;
 }
+
 .reservation-title {
   padding: 72px 36px 0px 36px;
 
@@ -327,6 +358,7 @@ button > a:hover{
   gap: 24px;
   align-self: stretch;
 }
+
 .reservation-title h2 {
   margin: 0px;
 
@@ -339,6 +371,7 @@ button > a:hover{
 
   color: #121212;
 }
+
 .reservation-title p {
   margin: 0px;
 
@@ -350,8 +383,9 @@ button > a:hover{
 
   color: #121212;
 }
+
 .reservation-fullContainer iframe {
-  height: 650px;
+  height: 750px;
 }
 
 .reservation-fullContainer iframe body {
@@ -388,6 +422,7 @@ button > a:hover{
   gap: 24px;
   align-self: stretch;
 }
+
 .offer-title h2 {
   margin: 0px;
 
@@ -400,6 +435,7 @@ button > a:hover{
 
   color: #f5f5f5;
 }
+
 .offer-content {
   width: 100%;
   margin-top: 30px;
@@ -410,6 +446,7 @@ button > a:hover{
   gap: 56px;
   align-self: stretch;
 }
+
 .offer-letter {
   width: 100%;
 
@@ -419,6 +456,7 @@ button > a:hover{
   gap: 12px;
   flex: 1 0 0;
 }
+
 .offer-menu {
   width: 100%;
 
@@ -428,6 +466,7 @@ button > a:hover{
   gap: 12px;
   flex: 1 0 0;
 }
+
 .offer-content div h3 {
   margin: 0;
 
@@ -439,6 +478,7 @@ button > a:hover{
 
   color: #f5f5f5;
 }
+
 .offer-content div p {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -448,29 +488,35 @@ button > a:hover{
 
   color: #f5f5f5;
 }
+
 .menu-img {
   width: 100%;
 }
-.menu-img > figure{
+
+.menu-img>figure {
   width: 100%;
   height: 444px;
   margin: 0;
 }
-.menu-img > figure img {
+
+.menu-img>figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .offer-letter figure {
   width: 100%;
   height: 444px;
   margin: 0;
 }
+
 .offer-letter figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .offer-letter-buttons {
   width: 100%;
 
@@ -481,6 +527,7 @@ button > a:hover{
   align-items: center;
   align-self: stretch;
 }
+
 .menu-button {
   width: 100%;
 
@@ -491,6 +538,7 @@ button > a:hover{
   align-items: flex-end;
   align-self: stretch;
 }
+
 .offer-content div button {
   padding: 12px 20px;
 
@@ -514,9 +562,11 @@ button > a:hover{
   border: 2px solid #f5f5f5;
   background-color: transparent;
 }
+
 .modal {
   display: none;
 }
+
 .modal-open {
   padding: 20px 36px;
   box-sizing: border-box;
@@ -534,6 +584,7 @@ button > a:hover{
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
 .modal-content {
   width: 100%;
   padding: 20px 36px;
@@ -554,11 +605,13 @@ button > a:hover{
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
 .modal-content-title {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 .modal-button {
   padding: 0 !important;
 
@@ -586,6 +639,7 @@ button > a:hover{
 
   color: #000;
 }
+
 .modal-content p {
   margin: 0;
 
@@ -598,6 +652,7 @@ button > a:hover{
 
   color: #000 !important;
 }
+
 .modal-text ul {
   padding: 0px;
 
@@ -610,6 +665,7 @@ button > a:hover{
 
   list-style: none;
 }
+
 .modal-text ul li {
   font-family: Dahlia;
   font-size: 16px;
@@ -630,6 +686,7 @@ button > a:hover{
   gap: 10px;
   align-self: stretch;
 }
+
 .about-container {
   padding-bottom: 36px;
 
@@ -639,6 +696,7 @@ button > a:hover{
   gap: 30px;
   align-self: stretch;
 }
+
 .about-title {
   padding: 24px 0px;
 
@@ -648,6 +706,7 @@ button > a:hover{
   gap: 24px;
   align-self: stretch;
 }
+
 .about-title h2 {
   margin: 0px;
 
@@ -660,6 +719,7 @@ button > a:hover{
 
   color: #f5f5f5;
 }
+
 .about-title p {
   margin: 0px;
 
@@ -683,6 +743,7 @@ button > a:hover{
   height: 545px;
   object-fit: cover;
 }
+
 .about-content {
   display: flex;
   flex-direction: column;
@@ -690,6 +751,7 @@ button > a:hover{
   gap: 24px;
   align-self: stretch;
 }
+
 .about {
   padding-bottom: 36px;
   display: flex;
@@ -699,17 +761,26 @@ button > a:hover{
 
   border-bottom: 2px solid #f5f5f5;
 }
-.about h3 {
+.about-img {
+  display: flex;
+  flex-direction: row;
+}
+.about h3, .about-data > h2  {
   margin: 0;
   font-family: Dahlia;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
-  line-height: 64px; /* 200% */
+  /* 200% */
   text-transform: capitalize;
 
   color: #f5f5f5;
 }
+.about-data {
+  display: flex;
+  flex-direction: column;
+}
+
 .about p {
   font-family: Helvetica;
   font-size: 16px;
@@ -743,6 +814,7 @@ button > a:hover{
 
   border-bottom: 2px solid #f5f5f5;
 }
+
 .contact-title {
   padding: 24px 0px;
 
@@ -752,6 +824,7 @@ button > a:hover{
   gap: 24px;
   align-self: stretch;
 }
+
 .contact-title h2 {
   margin: 0px;
 
@@ -764,6 +837,7 @@ button > a:hover{
 
   color: #f5f5f5;
 }
+
 .contact-title p {
   margin: 0px;
 
@@ -775,16 +849,19 @@ button > a:hover{
 
   color: #fff;
 }
+
 .contact-content {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
+
 .contact-content iframe {
   width: 100%;
   height: 300px;
   border: 0;
 }
+
 .contact-schedule h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
@@ -794,6 +871,7 @@ button > a:hover{
 
   color: #fff;
 }
+
 .contact-schedule p {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -803,6 +881,7 @@ button > a:hover{
 
   color: #fff;
 }
+
 .contact-information {
   display: flex;
   flex-direction: column;
@@ -811,6 +890,7 @@ button > a:hover{
   gap: 12px;
   align-self: stretch;
 }
+
 .contact {
   height: fit-content;
 
@@ -818,10 +898,12 @@ button > a:hover{
   align-items: center;
   gap: 12px;
 }
+
 .contact img {
   width: 25px;
   height: 25px;
 }
+
 .contact p {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -833,6 +915,7 @@ button > a:hover{
 
   color: #f5f5f5;
 }
+
 .contact a {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -844,6 +927,7 @@ button > a:hover{
 
   color: #f5f5f5;
 }
+
 .contact-title img {
   width: 100%;
   max-height: 350px;
@@ -866,6 +950,7 @@ button > a:hover{
 
   background-color: #121212;
 }
+
 .footer-container {
   width: 100%;
 
@@ -876,29 +961,37 @@ button > a:hover{
   gap: 40px;
   flex: 1 0 0;
 }
-.contact-footer > .contact-information img {
+
+.contact-footer>.contact-information img {
   width: 20px;
   height: 20px;
 }
-.contact-footer > .contact-information {
+
+.contact-footer>.contact-information {
   width: fit-content;
 }
-.contact-footer > .contact-information p {
+
+.contact-footer>.contact-information p {
   font-size: 12px;
 }
-.contact-footer > .contact-information a {
+
+.contact-footer>.contact-information a {
   font-size: 12px;
 }
+
 .footer-container .logo {
   width: fit-content;
 }
+
 .footer-container .logo a h1 {
   font-size: 64px;
 }
+
 .footer-container .logo a h2 {
   white-space: nowrap;
   font-size: 24px;
 }
+
 .LaMida {
   width: 100%;
 
@@ -906,6 +999,7 @@ button > a:hover{
   justify-content: center;
   align-items: center;
 }
+
 .LaMida h4 {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
@@ -922,13 +1016,18 @@ button > a:hover{
   flex-wrap: wrap;
   gap: 48px;
 }
+
 .menu-list ul {
   padding: 0px;
 }
+
 .menu-title {
   font-size: 24px;
 }
-.menu-0, .menu-1{
+
+.menu-0,
+.menu-1,
+.menu-2 {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -937,72 +1036,93 @@ button > a:hover{
   color: #f5f5f5;
   text-align: left !important;
 }
-.menu-0  > strong, .menu-1  > strong  {
+
+.menu-0>strong,
+.menu-1>strong,
+.menu-2>strong {
   font-family: Dahlia;
 }
-.menu-0 ul li, .menu-1 ul li  {
+
+.menu-0 ul li,
+.menu-1 ul li,
+.menu-2 ul li {
   font-family: "Montserrat", sans-serif;
   text-align: left !important;
   list-style: none;
 }
+
 .menu-1 p {
   text-align: left;
 }
-.menu-0-buttons, .menu-1-buttons{
+
+.menu-0-buttons,
+.menu-1-buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 24px;
 }
-.menu-0-buttons > button:hover, .menu-1-buttons > button:hover {
+
+.menu-0-buttons>button:hover,
+.menu-1-buttons>button:hover {
   color: #141414;
   background-color: #f5f5f5;
 }
-.menu-0-buttons > button:hover > a, .menu-1-buttons > button:hover > a {
+
+.menu-0-buttons>button:hover>a,
+.menu-1-buttons>button:hover>a {
   color: #141414;
 
 }
-.menu-0-buttons > button, .menu-1-buttons > button{
+
+.menu-0-buttons>button,
+.menu-1-buttons>button {
   flex: 1;
 }
 
-@media(max-width: 624px){
-  .offer-letter-buttons{
+@media(max-width: 624px) {
+  .offer-letter-buttons {
     flex-direction: column;
   }
-  .offer-letter-buttons > button{
+
+  .offer-letter-buttons>button {
     width: 100%;
   }
+
   .about {
     width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 24px;
   }
+
   .about-data {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
   }
+
   .about figure {
     flex: 1;
   }
 }
 
-@media(max-width: 950px) and (min-width: 625px){
+@media(max-width: 950px) and (min-width: 625px) {
   .about {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
   }
+
   .about-data {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
   }
+
   .about figure {
     flex: 1;
   }
@@ -1020,6 +1140,7 @@ button > a:hover{
     background-position: center;
     background-size: cover;
   }
+
   .header-container {
     max-width: 100%;
     height: auto;
@@ -1032,6 +1153,7 @@ button > a:hover{
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
   }
+
   .header-container-sticky {
     max-width: 100%;
     height: auto;
@@ -1044,6 +1166,7 @@ button > a:hover{
 
     backdrop-filter: blur(5px);
   }
+
   .header-content {
     height: auto;
     padding: 24px 0px;
@@ -1057,12 +1180,14 @@ button > a:hover{
 
     border-bottom: 2px solid #f5f5f5;
   }
+
   .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .logo > a > h1 {
+
+  .logo>a>h1 {
     margin: 0;
 
     text-align: center;
@@ -1072,7 +1197,8 @@ button > a:hover{
     line-height: normal;
     text-transform: capitalize;
   }
-  .logo > a > h2 {
+
+  .logo>a>h2 {
     margin: 0;
 
     font-size: 14px;
@@ -1082,6 +1208,7 @@ button > a:hover{
     letter-spacing: 1.08px;
     text-transform: capitalize;
   }
+
   .header-navigation {
     width: 100%;
     display: flex;
@@ -1099,12 +1226,14 @@ button > a:hover{
 
     color: #f5f5f5;
   }
+
   .main-navigation {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     gap: 24px;
   }
+
   .language-navigation button {
     color: #f5f5f5;
 
@@ -1137,6 +1266,7 @@ button > a:hover{
     flex: 1 0 0;
     align-self: stretch;
   }
+
   .hero-content {
     padding: 24px 0px;
 
@@ -1150,27 +1280,32 @@ button > a:hover{
   }
 
   .hero-text {
-    flex: 1; /* Allow the text to expand and take available space */
+    flex: 1;
+    /* Allow the text to expand and take available space */
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
 
   .hero-img {
-    flex: 1; /* Allow the image to expand and take available space */
+    flex: 1;
+    /* Allow the image to expand and take available space */
     display: flex;
-    align-items: baseline; /* Center the image vertically */
+    align-items: baseline;
+    /* Center the image vertically */
   }
 
   .hero-img figure {
-    max-height: 100%; /* Ensure the figure takes up the entire height of the .hero-img */
+    max-height: 100%;
+    /* Ensure the figure takes up the entire height of the .hero-img */
     margin: 0;
   }
 
   .hero-img figure img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the entire space */
   }
 
   .hero-content h1 {
@@ -1179,10 +1314,12 @@ button > a:hover{
     font-size: 52px;
     font-style: normal;
     font-weight: 500;
-    line-height: 48px; /* 80% */
+    line-height: 48px;
+    /* 80% */
 
     color: #f5f5f5;
   }
+
   .hero-content ul {
     margin: 0 auto;
     padding: 0;
@@ -1195,6 +1332,7 @@ button > a:hover{
 
     list-style: none;
   }
+
   .hero-buttons {
     display: flex;
     justify-content: end;
@@ -1202,10 +1340,12 @@ button > a:hover{
     align-self: stretch;
     gap: 48px;
   }
-  .hero-buttons button:nth-child(1):hover{
+
+  .hero-buttons button:nth-child(1):hover {
     color: #141414;
     background-color: #f5f5f5;
   }
+
   .reservar a {
     color: #121212;
   }
@@ -1268,6 +1408,7 @@ button > a:hover{
     flex-direction: row;
     justify-content: space-between;
   }
+
   .offer-img {
     height: 200px;
   }
@@ -1276,6 +1417,7 @@ button > a:hover{
     font-size: 24px;
     text-align: left;
   }
+
   .offer-menu ul li {
     list-style: none;
 
@@ -1297,17 +1439,21 @@ button > a:hover{
   .offer-menu {
     flex: 1;
   }
+
   .offer-letter-buttons button:hover {
     color: #141414;
     background-color: #f5f5f5;
   }
-  .offer-letter-buttons button:hover > a {
+
+  .offer-letter-buttons button:hover>a {
     color: #141414;
 
   }
+
   .modal {
     display: none;
   }
+
   .modal-open {
     padding: 20px 36px;
     box-sizing: border-box;
@@ -1324,6 +1470,7 @@ button > a:hover{
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
+
   .modal-content {
     max-width: 547px;
     width: 100%;
@@ -1345,12 +1492,14 @@ button > a:hover{
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
+
   .modal-content-title {
     max-width: 547px;
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
+
   .modal-button {
     padding: 0 !important;
 
@@ -1379,6 +1528,7 @@ button > a:hover{
 
     color: #000;
   }
+
   .modal-content p {
     max-width: 547px;
     margin: 0;
@@ -1392,6 +1542,7 @@ button > a:hover{
 
     color: #000 !important;
   }
+
   .modal-text ul {
     display: flex;
     flex-direction: column;
@@ -1402,6 +1553,7 @@ button > a:hover{
 
     list-style: none;
   }
+
   .modal-text ul li {
     font-family: Dahlia;
     font-size: 24px;
@@ -1411,6 +1563,7 @@ button > a:hover{
 
     color: #000;
   }
+
   .about-fullContainer {
     max-width: 100%;
     padding: 72px 110px;
@@ -1421,6 +1574,7 @@ button > a:hover{
     gap: 10px;
     align-self: stretch;
   }
+
   .about-container {
     padding-bottom: 36px;
 
@@ -1432,6 +1586,7 @@ button > a:hover{
 
     border-bottom: 2px solid #f5f5f5;
   }
+
   .about-title {
     padding: 24px 0px;
 
@@ -1441,6 +1596,7 @@ button > a:hover{
     gap: 24px;
     align-self: stretch;
   }
+
   .about-title h2 {
     margin: 0px;
 
@@ -1453,6 +1609,7 @@ button > a:hover{
 
     color: #f5f5f5;
   }
+
   .about-title p {
     margin: 0px;
 
@@ -1464,6 +1621,7 @@ button > a:hover{
 
     color: #fff;
   }
+
   .about-img figure {
     width: 100%;
     /*height: 700px;*/
@@ -1478,9 +1636,11 @@ button > a:hover{
     gap: 24px;
     align-self: stretch;
   }
+
   .about {
     border: none;
   }
+
   .reservation-fullContainer {
     max-width: 100%;
     padding: 72px 110px;
@@ -1492,9 +1652,11 @@ button > a:hover{
     gap: 10px;
     align-self: stretch;
   }
+
   .reservation-title {
     padding: 0;
   }
+
   .contact-title img {
     width: 100%;
     max-height: 300px;
@@ -1502,6 +1664,7 @@ button > a:hover{
 
     object-fit: cover;
   }
+
   .contact-fullContainer {
     max-width: 100%;
     padding: 72px 110px;
@@ -1512,10 +1675,12 @@ button > a:hover{
     gap: 10px;
     align-self: stretch;
   }
+
   .contact-map iframe {
     width: 600px;
     height: 100%;
   }
+
   .contact-content {
     flex-direction: row-reverse;
     gap: 48px;

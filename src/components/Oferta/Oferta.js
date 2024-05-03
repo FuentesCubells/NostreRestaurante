@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import carta from "./images/Carta.jpg";
 import menu from "./images/menu.jpg";
 import Bodega from "./images/Bodega.pdf";
 import Comida from "./images/Comida.pdf";
+import Origen from "./images/MenuOrigen.pdf"
+import Oportunidad from "./images/MenuOportunidad.pdf"
 
 const Oferta = ({ lenguage }) => {
+  /*
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenu = () => {
@@ -29,7 +32,7 @@ const Oferta = ({ lenguage }) => {
 
   const closeMenuModal = () => {
     setMenuOpen(false);
-  };
+  };*/
 
   if (lenguage === "EN") {
     return (
@@ -39,11 +42,76 @@ const Oferta = ({ lenguage }) => {
             <h2>Our Offer</h2>
           </div>
           <div className="offer-content">
-            <div className="offer-letter">
-              <figure>
-                <img src={carta} alt="Image of Nostre restaurant's menu" />
-              </figure>
+            <div className="offer-menu" id="menu-section">
+              <div className="menu-img">
+                <figure><img src={carta} alt="Image of Nostre restaurant's menu" /></figure>
+              </div>
               <h3>The Menu</h3>
+              <p>
+                Where we have wanted to capture our tradition, heritage, and
+                mestizaje. The menus are born for you to discover the true
+                essence of Nostre and experience the cuisine that we are.
+                The menus change according to the offer and season.
+              </p>
+              <ul className="menu-list">
+                <li className="menu-0">
+                  <strong className="menu-title"> Øpportunity Menu:</strong>
+                  <ul>
+                    <li>Aperitif sequence</li>
+                    <li>6 savory courses</li>
+                    <li>1 sweet course</li>
+                  </ul>
+                  <p>Price: €60 per person</p>
+                  <div className="menu-0-buttons">
+                    {/* <button>
+                      <a href={Oportunidad} target="_blank">View menu</a>
+                    </button> */}
+                    <button>
+                      <a href="/#reservation">Make a reservation</a>
+                    </button>
+                  </div>
+                </li>
+                <li className="menu-1">
+                  <strong className="menu-title"> Ørigin Menu:</strong>
+                  <ul>
+                    <li>Aperitif sequence</li>
+                    <li>7 savory courses</li>
+                    <li>2 sweet courses</li>
+                  </ul>
+                  <p>Price: €45 per person</p>
+                  <div className="menu-1-buttons">
+                    {/* <button>
+                      <a href={Origen} target="_blank">View menu</a>
+                    </button> */}
+                    <button>
+                      <a href="/#reservation">Make a reservation</a>
+                    </button>
+                  </div>
+                </li>
+                <li className="menu-2">
+                <strong className="menu-title">Ørgullo Menu:</strong>
+                <ul>
+                  <li>Snacks sequence</li>
+                  <li>4 savory courses</li>
+                  <li>1 sweet course</li>
+                </ul>
+                <p>Precio: 75€ por persona</p>
+                <div className="menu-1-buttons">
+                  {/* <button>
+                    <a href={Origen} target="_blank">Ver el menú</a>
+                  </button> */}
+                  <button>
+                    <a href="/#reservation">Hacer a reservation</a>
+                  </button>
+                </div>
+              </li>
+              </ul>
+            </div>
+            {/* <div className="offer-letter">
+              <figure>
+                <img alt="menu" src={menu}/>
+              </figure>
+              <h3>Menu card</h3>
               <p>
                 The bottom of a pot, onions sautéing over the embers, grandma
                 putting the clay pot on the fire, those recipes we've grown up
@@ -63,82 +131,8 @@ const Oferta = ({ lenguage }) => {
                   <a href="/#reservation">Make a reservation</a>
                 </button>
               </div>
-            </div>
-            <div className="offer-menu" id="menu-section">
-              <div className="menu-img">
-                <figure><img src={menu}/></figure>
-              </div>
-              <h3>The Menu</h3>
-              <p>
-                Where we have wanted to capture our tradition, heritage, and
-                mestizaje. The menus are born for you to discover the true
-                essence of Nostre and experience the cuisine that we are.
-              </p>
-              <ul className="menu-list">
-                <li className="menu-0">
-                  <strong className="menu-title"> Øpportunity Menu:</strong>
-                  <ul>
-                    <li>Aperitif sequence</li>
-                    <li>5 savory courses</li>
-                    <li>1 sweet course</li>
-                  </ul>
-                  <p>Price: €60 per person</p>
-                  <div className="menu-0-buttons">
-                    <button>
-                      <a href={Comida} target="_blank"></a>View menu
-                    </button>
-                    <button>
-                      <a href="/#reservation">Make a reservation</a>
-                    </button>
-                  </div>
-                </li>
-                <li className="menu-1">
-                  <strong className="menu-title"> Ørigin Menu:</strong>
-                  <ul>
-                    <li>Aperitif sequence</li>
-                    <li>6 savory courses</li>
-                    <li>2 sweet courses</li>
-                  </ul>
-                  <p>Price: €75 per person</p>
-                  <div className="menu-1-buttons">
-                    <button>
-                      <a href={Comida} target="_blank"></a>View menu
-                    </button>
-                    <button>
-                      <a href="/#reservation">Make a reservation</a>
-                    </button>
-                  </div>
-                </li>
-              </ul>
-
-              {/*<div className="offer-letter-buttons menu-button">
-    <button id="menu-section" onClick={handleMenu}>
-      View the menu
-    </button>
-  </div>*
-  <div
-    className={`${menuOpen ? "modal-open" : "modal"}`}
-    id="modal-container"
-  >
-    <div className="modal-content" id="modal">
-      <div className="modal-content-title">
-        <h4>Includes:</h4>
-        <button className="modal-button" onClick={closeMenuModal}>
-          Ø
-        </button>
-      </div>
-      <div className="modal-text">
-        <ul>
-          <li>2 Starters</li>
-          <li>Fish, meat, and dessert</li>
-          <li>Water and bread service</li>
-          <li>€37 per person</li>
-        </ul>
-      </div>
-      <p>The menu is prepared according to market products.</p>
-    </div>
-  </div>/*/}
-            </div>
+            </div> */}
+            
           </div>
         </div>
       </div>
@@ -151,10 +145,78 @@ const Oferta = ({ lenguage }) => {
           <h2>Nuestra oferta</h2>
         </div>
         <div className="offer-content">
-          <div className="offer-letter">
-            <figure>
-              <img src={carta} alt="Imagen de la carta de Nostre restaurante" />
-            </figure>
+        <div className="offer-menu" id="menu-section">
+            <div className="menu-img">
+              <figure>
+                <img src={carta} alt="Imagen de la carta de Nostre restaurante" />
+              </figure>
+            </div>
+            <h3>El menú</h3>
+            <p>
+              Donde hemos querido plasmar nuestra tradición, herencia y
+              mestizaje. Los menús nacen para que descubras la verdadera esencia
+              de Nostre y vivas la experiencia de la cocina que somos. <u>Los menús cambian diariamente dependiendo de la estacionalidad, productos e inspiración del equipo</u>
+            </p>
+            <ul className="menu-list">
+              <li className="menu-0">
+                <strong className="menu-title">Menú  Øportunidad:</strong>
+                <ul>
+                  <li>Secuencia de aperitivos</li>
+                  <li>6 pases salados</li>
+                  <li>1 pase dulce</li>
+                </ul>
+                <p>Precio: 60€ por persona</p>
+                <div className="menu-0-buttons">
+                  {/* <button>
+                    <a href={Oportunidad} target="_blank">Ver el menú</a>
+                  </button> */}
+                  <button>
+                    <a href="/#reservation">Hacer una reserva</a>
+                  </button>
+                </div>
+
+              </li>
+              <li className="menu-1">
+                <strong className="menu-title">Menú  Ørigen:</strong>
+                <ul>
+                  <li>Secuencia de aperitivos</li>
+                  <li>7 pases salados</li>
+                  <li>2 pases dulces</li>
+                </ul>
+                <p>Precio: 45€ por persona</p>
+                <div className="menu-1-buttons">
+                  {/* <button>
+                    <a href={Origen} target="_blank">Ver el menú</a>
+                  </button> */}
+                  <button>
+                    <a href="/#reservation">Hacer una reserva</a>
+                  </button>
+                </div>
+              </li>
+              <li className="menu-2">
+                <strong className="menu-title">Menú  Ørgullo:</strong>
+                <ul>
+                  <li>Secuencia de snacks</li>
+                  <li>4 pases salados</li>
+                  <li>1 pases dulces</li>
+                </ul>
+                <p>Precio: 75€ por persona</p>
+                <div className="menu-1-buttons">
+                  {/* <button>
+                    <a href={Origen} target="_blank">Ver el menú</a>
+                  </button> */}
+                  <button>
+                    <a href="/#reservation">Hacer una reserva</a>
+                  </button>
+                </div>
+              </li>
+            </ul>
+
+            
+          </div>
+          {/* <div className="offer-letter">
+            <figure><img alt="menu" src={menu}/></figure>
+            
             <h3>La carta</h3>
             <p id="paragraph">
               El fondo de una olla, cebolla pochando al rescoldo de unas brasas,
@@ -178,83 +240,8 @@ const Oferta = ({ lenguage }) => {
                 <a href="/#reservation">Hacer una reserva</a>
               </button>
             </div>
-          </div>
-          <div className="offer-menu" id="menu-section">
-            <div className="menu-img">
-              <figure><img src={menu}/></figure>
-            </div>
-            <h3>El menú</h3>
-            <p>
-              Donde hemos querido plasmar nuestra tradición, herencia y
-              mestizaje. Los menús nacen para que descubras la verdadera esencia
-              de Nostre y vivas la experiencia de la cocina que somos.
-            </p>
-            <ul className="menu-list">
-              <li className="menu-0">
-                <strong className="menu-title">Menú  Øportunidad:</strong>
-                <ul>
-                  <li>Secuencia de aperitivos</li>
-                  <li>5 pases salados</li>
-                  <li>1 pase dulce</li>
-                </ul>
-                <p>Precio: 60€ por persona</p>
-                <div className="menu-0-buttons">
-                  <button>
-                    <a href={Comida} target="_blank">Ver el menú</a>
-                  </button>
-                  <button>
-                    <a href="/#reservation">Hacer una reserva</a>
-                  </button>
-                </div>
-
-              </li>
-              <li className="menu-1">
-                <strong className="menu-title">Menú  Ørigen:</strong>
-                <ul>
-                  <li>Secuencia de aperitivos</li>
-                  <li>6 pases salados</li>
-                  <li>2 pases dulces</li>
-                </ul>
-                <p>Precio: 75€ por persona</p>
-                <div className="menu-1-buttons">
-                  <button>
-                    <a href={Comida} target="_blank"></a>Ver el menú
-                  </button>
-                  <button>
-                    <a href="/#reservation">Hacer una reserva</a>
-                  </button>
-                </div>
-              </li>
-            </ul>
-
-            {/*<div className="offer-letter-buttons menu-button">
-              <button id="menu-section" onClick={handleMenu}>
-                Ver el menú
-              </button>
-            </div>*
-            <div
-              className={`${menuOpen ? "modal-open" : "modal"}`}
-              id="modal-container"
-            >
-              <div className="modal-content" id="modal">
-                <div className="modal-content-title">
-                  <h4>Incluye:</h4>
-                  <button className="modal-button" onClick={closeMenuModal}>
-                    Ø
-                  </button>
-                </div>
-                <div className="modal-text">
-                  <ul>
-                    <li>2 Entrantes</li>
-                    <li>Pescado, carne y postre</li>
-                    <li>Servicio de agua y pan</li>
-                    <li>37 euros por persona</li>
-                  </ul>
-                </div>
-                <p>El menú se elabora según los productos del mercado</p>
-              </div>
-            </div>/*/}
-          </div>
+          </div> */}
+          
         </div>
       </div>
     </div>

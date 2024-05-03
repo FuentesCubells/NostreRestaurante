@@ -18,7 +18,7 @@ const About = ({ lenguage }) => {
           <div className="about-img">
             <div className="about-content">
               <div className="about">
-              <figure><img src={Andres}/></figure>
+                <figure><img src={Andres} /></figure>
                 <div className="about-data">
                   <h3>Andrés Rengel:</h3>
                   <p>
@@ -37,7 +37,7 @@ const About = ({ lenguage }) => {
                 </div>
               </div>
               <div className="about">
-              <figure><img src={Nadia}/></figure>
+                <figure><img src={Nadia} /></figure>
                 <div className="about-data">
                   <h3>Nadia Abramova:</h3>
                   <p>
@@ -51,10 +51,10 @@ const About = ({ lenguage }) => {
                     kombuchas!
                   </p>
                 </div>
-                
+
               </div>
-              <div className="about">
-              <figure><img src={Alberto}/></figure>
+              {/* <div className="about">
+                <figure><img src={Alberto} /></figure>
                 <div className="about-data">
                   <h3>Alberto Pastor:</h3>
                   <p>
@@ -69,8 +69,8 @@ const About = ({ lenguage }) => {
                     the occasional laugh.
                   </p>
                 </div>
-                
-              </div>
+
+              </div> */}
             </div>
           </div>
         </div>
@@ -86,27 +86,30 @@ const About = ({ lenguage }) => {
         </div>
         <div className="about-img">
           <div className="about-content">
-            <div className="about">
-              <figure><img src={Andres}/></figure>
-              <div className="about-data">
-                <h3>Andrés Rengel:</h3>
-                <p>
-                  Valenciano de raíces andaluzas, castellanas y aragonesas. Tras
-                  estudiar cocina, decide pasar por diferentes restaurantes de
-                  estrella Michelin, como La Finca, El Celler de Can Roca, Arrea,
-                  para perfeccionar sus conocimientos. Termina en la docencia,
-                  dando clases de formación profesional, pero desde que se inició
-                  en la cocina, había tenido el sueño de abrir su propio
-                  restaurante. Nostre es la apuesta más arriesgada y personal de
-                  este adicto a la gastronomía. Entre sus hobbies, está el
-                  prepararse para ganar concursos de cocina, la montaña y aunque
-                  lo niegue, ser todo un bailarín.
-                </p>
-              </div>
-              
+                   
+          <div className="about">
+            <figure><img src={Andres} /></figure>
+            <div className="about-data">
+              <h2>El chef: </h2>
+              <h3>Andrés Rengel</h3>
+              <p>
+                Valenciano de raíces andaluzas, castellanas y aragonesas. Tras
+                estudiar cocina, decide pasar por diferentes restaurantes de
+                estrella Michelin, como La Finca, El Celler de Can Roca, Arrea,
+                para perfeccionar sus conocimientos. Termina en la docencia,
+                dando clases de formación profesional, pero desde que se inició
+                en la cocina, había tenido el sueño de abrir su propio
+                restaurante. Nostre es la apuesta más arriesgada y personal de
+                este adicto a la gastronomía. Entre sus hobbies, está el
+                prepararse para ganar concursos de cocina, la montaña y aunque
+                lo niegue, ser todo un bailarín.
+              </p>
             </div>
+
+          </div>
+         
             <div className="about">
-              <figure><img src={Nadia}/></figure>
+              <figure><img src={Nadia} /></figure>
               <div className="about-data">
                 <h3>Nadia Abramova:</h3>
                 <p>
@@ -120,10 +123,10 @@ const About = ({ lenguage }) => {
                   sus combuchas caseras!
                 </p>
               </div>
-              
+
             </div>
-            <div className="about">
-              <figure><img src={Alberto}/></figure>
+            {/* <div className="about">
+              <figure><img src={Alberto} /></figure>
               <div className="about-data">
                 <h3>Alberto Pastor:</h3>
                 <p>
@@ -138,8 +141,8 @@ const About = ({ lenguage }) => {
                   alguna que otra carcajada.
                 </p>
               </div>
-              
-            </div>
+
+            </div> */}
           </div>
         </div>
       </div>
