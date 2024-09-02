@@ -14,13 +14,17 @@ const Footer = () => {
               <p>603 112 049</p>
             </div>
             <div className="contact">
-              <img src={map} alt="phone icon" />
-              <p>Calle Mallorquins, 1, 46001, Valencia</p>
+              <img src={map} alt="map icon" />
+              <p>Calle Doctor Ferran 6, 46021, Valencia</p> 
             </div>
             <div className="contact">
-              <img src={email} alt="phone icon" />
+              <img src={email} alt="email icon" />
               <p><a href="mailto:nostre@cocinaquesomos.com">nostre@cocinaquesomos.com</a></p>
             </div>
+          </div>
+          <div className="hours-information">
+            <h3>Horario:</h3>
+            <p>Miércoles a Sábado: 13:30 - 16:00 / 20:30 - 23:00</p> 
           </div>
         </div>
         <div className="logo">

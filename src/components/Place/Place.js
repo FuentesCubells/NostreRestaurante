@@ -29,34 +29,34 @@ const Place = ({ lenguage }) => {
               ></iframe>
             </div>
             <div className="contact-text">
-              {/* <div className="contact-schedule">
-                <h3>Opening Hours:</h3>
-                <p>
-                La Barra de Nostre: Breakfasts, lunches and tapas from Monday to Thursday 9:30 to 14:30
-                </p>
-                <p>Nostre cocina: Lunches and dinners, Thursdays from 20:30 to 23:00 Fridays and Saturdays from 13:30 to 17:00 and 20:30 to 23:00</p>
-              </div> */}
               <div className="contact-information">
                 <div className="contact">
                   <img src={phone} alt="phone icon" />
                   <p>+34 603 11 20 49</p>
                 </div>
                 <div className="contact">
-                  <img src={map} alt="phone icon" />
-                  <p>Calles Mallorquins, 1, 46001, Valencia</p>
+                  <img src={map} alt="map icon" />
+                  <p>Calle Doctor Ferran 6, 46021, Valencia</p> {/* Nueva dirección */}
                 </div>
                 <div className="contact">
-                  <img src={email} alt="phone icon" />
+                  <img src={email} alt="email icon" />
                   <p>
                     <a href="mailto:nostre@cocinaquesomos.com">
                       nostre@cocinaquesomos.com
                     </a>
                   </p>
                 </div>
+                <div className="policy-links">
+                  <p>
+                    <a href="https://www.nostrecocinaquesomos.es/privacy-policy" target="_blank" rel="noopener noreferrer">
+                      Privacy Policy
+                    </a>
+                  </p>
+                </div>
                 <div className="contact">
                   <p>
-                    You can also get to know us a little better on our Instagram
-                    account @nostrecocina
+                    You can also get to know us a little better on our Instagram account
+                    <a href="https://www.instagram.com/nostrecocina" target="_blank" rel="noopener noreferrer">@nostrecocina</a>.
                   </p>
                 </div>
               </div>
@@ -88,34 +88,34 @@ const Place = ({ lenguage }) => {
             ></iframe>
           </div>
           <div className="contat-text">
-            {/* <div className="contact-schedule">
-              <h3>Horario:</h3>
-              <p>
-                La Barra de Nostre: Desayunos, almuerzos y tapitas de lunes a jueves 9:30 a 14:30 
-              </p>
-              <p>Nostre cocina: Comidas y cenas, Jueves de 20:30 a 23:00 viernes y sábados de 13:30 a 17:00 y 20:30 a 23:00</p>
-            </div> */}
             <div className="contact-information">
               <div className="contact">
                 <img src={phone} alt="phone icon" />
                 <p>+34 603 11 20 49</p>
               </div>
               <div className="contact">
-                <img src={map} alt="phone icon" />
-                <p>Calle Mallorquins, 1, 46001, Valencia</p>
+                <img src={map} alt="map icon" />
+                <p>Calle Doctor Ferran 6, 46021, Valencia</p> {/* Nueva dirección */}
               </div>
               <div className="contact">
-                <img src={email} alt="phone icon" />
+                <img src={email} alt="email icon" />
                 <p>
                   <a href="mailto:nostre@cocinaquesomos.com">
                     nostre@cocinaquesomos.com
                   </a>
                 </p>
               </div>
+              <div className="policy-links">
+                <p>
+                  <a href="https://www.nostrecocinaquesomos.es/politica-de-privacidad" target="_blank" rel="noopener noreferrer">
+                    Política de Privacidad
+                  </a>
+                </p>
+              </div>
               <div className="contact">
                 <p>
-                  También puedes conocernos un poco mejor en nuestra cuenta de
-                  instagram @nostrecocina
+                  También puedes conocernos un poco mejor en nuestra cuenta de Instagram
+                  <a href="https://www.instagram.com/nostrecocina" target="_blank" rel="noopener noreferrer">@nostrecocina</a>.
                 </p>
               </div>
             </div>
