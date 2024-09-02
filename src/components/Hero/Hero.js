@@ -31,7 +31,7 @@ const Hero = ({lenguage}) => {
     }
 
     return (
-        <div className='hero-container'>
+        <div className='hero-container' id='home'>
             <div className='hero-content'>
                 <div className='hero-text'>
                     <h1>Cocinamos para sentir, por eso cocinamos lo que somos.</h1>
