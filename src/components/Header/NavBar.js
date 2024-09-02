@@ -1,4 +1,5 @@
 import React, { useState, useRef} from "react";
+import { Link } from 'react-router-dom';
 import icon from "./burger-icon.png";
 
 const NavBar = ({ lenguage }) => {
@@ -31,6 +32,9 @@ const NavBar = ({ lenguage }) => {
           id="menu"
           ref={menuRef}
         >
+          <li>
+          <Link to="/">Home</Link>
+          </li>
           <li>
             <a
               onClick={() => {
@@ -75,6 +79,13 @@ const NavBar = ({ lenguage }) => {
               Contact
             </a>
           </li>
+          <li>
+          <Link to="/refund-politics">Refund Policy</Link>
+          </li>
+          <li>
+          <Link to="/privacy-policy">Privacy Policy</Link>
+          </li>
+          
         </ul>
       </nav>
     );
@@ -90,6 +101,9 @@ const NavBar = ({ lenguage }) => {
         id="menu"
         ref={menuRef}
       >
+        <li>
+          <Link to="/">Home</Link>
+        </li>
         <li>
           <a
             onClick={() => {
@@ -133,6 +147,12 @@ const NavBar = ({ lenguage }) => {
           >
             Contacto
           </a>
+        </li>
+        <li>
+          <Link to="/refund-policy">Política de Reembolsos</Link>
+        </li>
+        <li>
+          <Link to="/privacy-policy">Política de Privacidad</Link>
         </li>
       </ul>
     </nav>

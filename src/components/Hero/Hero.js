@@ -48,7 +48,7 @@ const Hero = ({lenguage}) => {
                 </div>
             </div>
             <div className='hero-buttons'>
-                <button><a href="#carta">Ver La Carta</a></button>
+                <button><a href="#carta">Ver Menú</a></button>
                 <button className='reservar'><a href='#reservation'>Reservar</a></button>
             </div>
         </div>

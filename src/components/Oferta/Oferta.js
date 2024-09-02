@@ -78,7 +78,7 @@ const Oferta = ({ lenguage }) => {
                     <li>7 savory courses</li>
                     <li>2 sweet courses</li>
                   </ul>
-                  <p>Price: €45 per person</p>
+                  <p>Price: €75 per person</p>
                   <div className="menu-1-buttons">
                     {/* <button>
                       <a href={Origen} target="_blank">View menu</a>
@@ -95,7 +95,7 @@ const Oferta = ({ lenguage }) => {
                   <li>4 savory courses</li>
                   <li>1 sweet course</li>
                 </ul>
-                <p>Precio: 75€ por persona</p>
+                <p>Precio: 45€ por persona</p>
                 <div className="menu-1-buttons">
                   {/* <button>
                     <a href={Origen} target="_blank">Ver el menú</a>
@@ -183,7 +183,7 @@ const Oferta = ({ lenguage }) => {
                   <li>7 pases salados</li>
                   <li>2 pases dulces</li>
                 </ul>
-                <p>Precio: 45€ por persona</p>
+                <p>Precio: 75€ por persona</p>
                 <div className="menu-1-buttons">
                   {/* <button>
                     <a href={Origen} target="_blank">Ver el menú</a>
@@ -200,7 +200,7 @@ const Oferta = ({ lenguage }) => {
                   <li>4 pases salados</li>
                   <li>1 pases dulces</li>
                 </ul>
-                <p>Precio: 75€ por persona</p>
+                <p>Precio: 45€ por persona</p>
                 <div className="menu-1-buttons">
                   {/* <button>
                     <a href={Origen} target="_blank">Ver el menú</a>

@@ -1,31 +1,20 @@
-import React, { useState } from "react";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Reservation from "./components/Reservation/Reservation";
-import Place from "./components/Place/Place";
-import Footer from "./components/Footer/Footer";
-import Oferta from "./components/Oferta/Oferta";
-import About from "./components/About/About";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomeComponent from "./pages/home";
+import RefundPolicy from "./pages/refundPolicy";
+import PrivacyPolicy from "./pages/privacyPolicy";
 
 const App = () => {
 
-  const [lenguage, setLenguage] = useState('')
-
-  const handleLenguage = (len) => {
-    setLenguage(len) 
-  }
-
   return (
     <>
-      <div className="image-container">
-          <Header onClick={handleLenguage} lenguage={lenguage} />
-          <Hero lenguage={lenguage}/>
-      </div>
-      <Oferta lenguage={lenguage} />
-      <About lenguage={lenguage}/>
-      <Reservation lenguage={lenguage}/>
-      <Place lenguage={lenguage}/>
-      <Footer lenguage={lenguage} />
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomeComponent />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        </Routes>
+      </Router>
     </>
   )
 }

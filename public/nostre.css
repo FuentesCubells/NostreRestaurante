@@ -146,6 +146,12 @@ button>a:hover {
   justify-content: flex-end;
   align-items: flex-start;
   gap: 16px;
+
+  cursor: pointer;
+}
+
+.language-navigation > button {
+  cursor: pointer;
 }
 
 .header-navigation>div>a:hover {
@@ -1080,6 +1086,39 @@ button>a:hover {
   flex: 1;
 }
 
+/*Politics Wrapper*/
+.politics-wrapper{
+  padding: 56px 36px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+
+  color: #f5f5f5;
+}
+
+.politics-wrapper > h1 {
+  margin: 0;
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  font-family: "Dahlia";
+  src: url("./assets/Dahlia-Medium.woff2") format("woff2");
+}
+
+.politics-wrapper > h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+
+
+
 @media(max-width: 624px) {
   .offer-letter-buttons {
     flex-direction: column;
@@ -1125,6 +1164,36 @@ button>a:hover {
 
   .about figure {
     flex: 1;
+  }
+
+  /*Politics Wrapper*/
+  .politics-wrapper{
+    padding: 56px 36px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+    color: #f5f5f5;
+  }
+
+  .politics-wrapper > h1 {
+    margin: 0;
+
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    font-family: "Dahlia";
+    src: url("./assets/Dahlia-Medium.woff2") format("woff2");
+  }
+
+  .politics-wrapper > h2 {
+    margin: 0;
+    font-size: 20px;
   }
 }
 
@@ -1695,5 +1764,36 @@ button>a:hover {
     align-items: center;
     gap: 40px;
     flex: 1 0 0;
+  }
+
+  /*Politics Wrapper*/
+  .politics-wrapper{
+    max-width: 100%;
+    padding: 72px 110px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 10px;
+    align-self: stretch;
+
+    color: #f5f5f5;
+  }
+
+  .politics-wrapper > h1 {
+    margin: 0;
+
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    font-family: "Dahlia";
+    src: url("./assets/Dahlia-Medium.woff2") format("woff2");
+  }
+
+  .politics-wrapper > h2 {
+    margin: 0;
   }
 }
