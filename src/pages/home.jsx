@@ -9,7 +9,7 @@ import About from "../components/About/About";
 import Loader from "../components/Loader/loader";
 
 const HomeComponent = () => {
-  const [language, setLanguage] = useState('');
+  const [lenguage, setLanguage] = useState('ES');
   const [showLoader, setShowLoader] = useState(true);
 
 
@@ -33,16 +33,16 @@ const HomeComponent = () => {
     <>
       {showLoader && <Loader onHide={() => setShowLoader(false)} />}
       <div className="image-container">
-        <Header onClick={handleLanguage} language={language} />
+        <Header onClick={handleLanguage} lenguage={lenguage} />
         <div>
-          <Hero language={language} />
+          <Hero lenguage={lenguage} />
         </div>
       </div>
-      <Oferta language={language} />
-      <About language={language} />
-      <Reservation language={language} />
-      <Place language={language} />
-      <Footer language={language} />
+      <Oferta lenguage={lenguage} />
+      <About lenguage={lenguage} />
+      <Reservation lenguage={lenguage} />
+      <Place lenguage={lenguage} />
+      <Footer lenguage={lenguage} />
     </>
   );
 }

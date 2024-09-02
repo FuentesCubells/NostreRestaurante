@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Header = ({ onClick, lenguage  }) => {
   const [sticky, setIssticky] = useState(false);
+  const [lang, setLang] = useState('');
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +23,8 @@ const Header = ({ onClick, lenguage  }) => {
     };
   }, []);
 
-  if (lenguage === "EN") {
+
+  if (lang === "EN") {
     return (
       <div className={`header-container${sticky ? "-sticky" : ""}`}>
         <div className="header-content">

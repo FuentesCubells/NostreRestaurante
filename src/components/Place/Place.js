@@ -12,7 +12,6 @@ const Place = ({ lenguage }) => {
         <div className="contact-container">
           <div className="contact-title" id="contact">
             <h2>Where Will You Find Us?</h2>
-            <p>Just a few meters from the Central Market</p>
             <img
               src={place}
               alt="an image of the restaurant in front of the Central Market"
@@ -46,6 +45,11 @@ const Place = ({ lenguage }) => {
                     </a>
                   </p>
                 </div>
+                <div className="hours-information">
+                  <h3>Hours:</h3>
+                  <p>Wednesday to Saturday: 13:30 - 16:00 / 20:30 - 23:00</p>
+                </div>
+
                 <div className="policy-links">
                   <p>
                     <a href="https://www.nostrecocinaquesomos.es/privacy-policy" target="_blank" rel="noopener noreferrer">
@@ -71,7 +75,6 @@ const Place = ({ lenguage }) => {
       <div className="contact-container">
         <div className="contact-title" id="contact">
           <h2>¿Dónde Nos Encontrarás?</h2>
-          <p>A pocos metros del Mercado Central</p>
           <img
             src={place}
             alt="una imagen del restaurante enfrente del mercado central"
@@ -104,6 +107,10 @@ const Place = ({ lenguage }) => {
                     nostre@cocinaquesomos.com
                   </a>
                 </p>
+              </div>
+              <div className="hours-information">
+                <h3>Horario:</h3>
+                <p>Miércoles a Sábado: 13:30 - 16:00 / 20:30 - 23:00</p>
               </div>
               <div className="policy-links">
                 <p>

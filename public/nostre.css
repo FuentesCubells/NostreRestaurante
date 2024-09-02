@@ -997,6 +997,21 @@ button>a:hover {
   white-space: nowrap;
   font-size: 24px;
 }
+.hours-information{
+  margin-top: 10px;
+  color: #f5f5f5;
+}
+.hours-information h3{
+  margin: 0;
+
+  font-family: 'Dahlia';
+  font-size: 16px;
+}
+.hours-information p{
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
 
 .LaMida {
   width: 100%;
