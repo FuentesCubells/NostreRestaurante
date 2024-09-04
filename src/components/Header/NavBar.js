@@ -1,9 +1,10 @@
-import React, { useState, useRef} from "react";
-import { Link } from 'react-router-dom';
+import React, { useState, useRef } from "react";
+import { Link, useNavigate } from 'react-router-dom';
 import icon from "./burger-icon.png";
 
 const NavBar = ({ lenguage }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
   const menuRef = useRef(null);
 
   const scrollToSection = (sectionId) => {
@@ -20,7 +21,11 @@ const NavBar = ({ lenguage }) => {
     setIsOpen(false);
   };
 
-  
+  const goTo = (direction) => {
+    navigate(direction)
+  }
+
+
   if (lenguage === "EN") {
     return (
       <nav className="nav-mobile">
@@ -33,7 +38,7 @@ const NavBar = ({ lenguage }) => {
           ref={menuRef}
         >
           <li>
-          <Link to="/">Home</Link>
+            <a onClick={() => goTo('/')}>Home</a>
           </li>
           <li>
             <a
@@ -80,17 +85,16 @@ const NavBar = ({ lenguage }) => {
             </a>
           </li>
           <li>
-          <Link to="/refund-politics">Refund Policy</Link>
+            <a onClick={() => goTo('/refund-policy')}>Refund Policy</a>
           </li>
           <li>
-          <Link to="/privacy-policy">Privacy Policy</Link>
+            <a onClick={() => goTo('/privacy-policy')}>Privacy Policy</a>
           </li>
-          
         </ul>
       </nav>
     );
   }
-  
+
   return (
     <nav className="nav-mobile">
       <button className="burguer-icon" onClick={() => setIsOpen(!isOpen)}>
@@ -102,7 +106,7 @@ const NavBar = ({ lenguage }) => {
         ref={menuRef}
       >
         <li>
-          <Link to="/">Home</Link>
+          <a onClick={() => goTo('/')}>Home</a>
         </li>
         <li>
           <a
@@ -149,10 +153,10 @@ const NavBar = ({ lenguage }) => {
           </a>
         </li>
         <li>
-          <Link to="/refund-policy">Política de Reembolsos</Link>
+          <a onClick={() => goTo('/refund-policy')}>Política de Reembolsos</a>
         </li>
         <li>
-          <Link to="/privacy-policy">Política de Privacidad</Link>
+          <a onClick={() => goTo('/privacy-policy')}>Política de Privacidad</a>
         </li>
       </ul>
     </nav>

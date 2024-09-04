@@ -4,8 +4,15 @@ import map from "./images/Map.png";
 import email from "./images/Email.png";
 
 import place from "./images/Contacto.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Place = ({ lenguage }) => {
+  const navigate = useNavigate();
+
+  const goTo = (direction) => {
+    navigate(direction)
+  }
+
   if (lenguage === "EN") {
     return (
       <div className="contact-fullContainer">
@@ -52,9 +59,7 @@ const Place = ({ lenguage }) => {
 
                 <div className="policy-links">
                   <p>
-                    <a href="https://www.nostrecocinaquesomos.es/privacy-policy" target="_blank" rel="noopener noreferrer">
-                      Privacy Policy
-                    </a>
+                    <a onClick={() => goTo('/privacy-policy')}>Privacy Policy</a>
                   </p>
                 </div>
                 <div className="contact">
@@ -114,9 +119,7 @@ const Place = ({ lenguage }) => {
               </div>
               <div className="policy-links">
                 <p>
-                  <a href="https://www.nostrecocinaquesomos.es/politica-de-privacidad" target="_blank" rel="noopener noreferrer">
-                    Política de Privacidad
-                  </a>
+                  <a onClick={() => goTo('/privacy-policy')}>Política de Privacidad</a>
                 </p>
               </div>
               <div className="contact">
