@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/NostreRestaurante/static/js/main.d25c4b41.js",
+    "main.js": "/NostreRestaurante/static/js/main.6cc30e36.js",
     "static/media/Sara.jpeg": "/NostreRestaurante/static/media/Sara.7eea46607e159cfcb448.jpeg",
     "static/media/platoOferta.jpeg": "/NostreRestaurante/static/media/platoOferta.7ae59ed101ffd3db628b.jpeg",
     "static/media/andres.jpeg": "/NostreRestaurante/static/media/andres.4cf31fd5993ce154b589.jpeg",
@@ -14,9 +14,9 @@
     "static/media/Comida.pdf": "/NostreRestaurante/static/media/Comida.22327816c5ce65dd380f.pdf",
     "static/media/Bodega.pdf": "/NostreRestaurante/static/media/Bodega.9e490168c33ed2ad0ba2.pdf",
     "index.html": "/NostreRestaurante/index.html",
-    "main.d25c4b41.js.map": "/NostreRestaurante/static/js/main.d25c4b41.js.map"
+    "main.6cc30e36.js.map": "/NostreRestaurante/static/js/main.6cc30e36.js.map"
   },
   "entrypoints": [
-    "static/js/main.d25c4b41.js"
+    "static/js/main.6cc30e36.js"
   ]
 }
