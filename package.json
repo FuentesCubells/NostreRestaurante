@@ -1,6 +1,6 @@
 {
   "name": "nostrelandign",
-  "homepage": "https://fuentescubells.github.io/NostreRestaurante/",
+  "homepage": "https://nostrerestaurante-production.up.railway.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
