@@ -11,6 +11,7 @@ const App = () => {
         <Route path="/" element={<HomeComponent />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="*" element={<Navigate to="/" replace />} /> 
       </Routes>
     </Router>
   );
