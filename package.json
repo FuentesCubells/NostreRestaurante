@@ -1,6 +1,6 @@
 {
   "name": "nostrelandign",
-  "homepage": "https://nostrecocinaquesomos.es/",
+  "homepage": "https://fuentescubells.github.io/NostreRestaurante/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "start": "serve build -s -n -L",
+    "start": "serve -s build -l ${PORT:-3000} -n -L",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
