@@ -7,6 +7,7 @@ import Footer from "../components/Footer/Footer";
 import Oferta from "../components/Oferta/Oferta";
 import About from "../components/About/About";
 import Loader from "../components/Loader/loader";
+import BodegaSection from "../components/Bodega/Bodeja";
 
 const HomeComponent = () => {
   const [lenguage, setLanguage] = useState('ES');
@@ -39,6 +40,7 @@ const HomeComponent = () => {
         </div>
       </div>
       <Oferta lenguage={lenguage} />
+      <BodegaSection lenguage={lenguage} ></BodegaSection>
       <About lenguage={lenguage} />
       <Reservation lenguage={lenguage} />
       <Place lenguage={lenguage} />

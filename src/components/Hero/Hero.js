@@ -34,12 +34,7 @@ const Hero = ({lenguage}) => {
         <div className='hero-container' id='home'>
             <div className='hero-content'>
                 <div className='hero-text'>
-                    <h1>Cocinamos para sentir, por eso cocinamos lo que somos.</h1>
-                    <ul>
-                        <li><span>Somos Øportunidad,</span> aquella que nos ofrece la temporada de nuestros productos</li>
-                        <li><span>Somos Ørigen,</span> el resultado de todo un cruce de influencias: la de la inmigración de aquellos aragoneses, andaluces y manchegos que llegaron hasta Valencia.</li>
-                        <li><span>Somos Ørgullo,</span> compartimos la memoria de nuestros antepasados y la cocinamos junto a la influencia de nuestros mejores maestros.</li>
-                    </ul>
+                    <h1>En nostre honramos el origen. Tenemos un destino. Sin origen no hay destino</h1>
                 </div>
                 <div className="hero-img">
                     <figure>

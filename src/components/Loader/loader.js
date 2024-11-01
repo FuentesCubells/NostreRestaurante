@@ -31,7 +31,6 @@ const Loader = ({ onHide }) => {
     <div className="loader-screen">
       <div className="logo">
         <h1>NOSTRE</h1>
-        <h2>Cocina que somos</h2>
       </div>
     </div>
   );

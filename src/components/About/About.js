@@ -1,7 +1,7 @@
 import React from "react";
-import Andres from "./images/andres.jpg"
-import Alberto from "./images/alberto.jpg"
-import Nadia from "./images/Nadia.jpg"
+import Andres from "./images/andres.jpeg"
+import Sara from "./images/Sara.jpeg"
+import Nadia from "./images/nadia.jpeg"
 
 const About = ({ lenguage }) => {
   if (lenguage === "EN") {
@@ -53,24 +53,17 @@ const About = ({ lenguage }) => {
                 </div>
 
               </div>
-              {/* <div className="about">
-                <figure><img src={Alberto} /></figure>
+              <div className="about">
+                <figure><img src={Sara} alt="Sara Forner" /></figure>
                 <div className="about-data">
-                  <h3>Alberto Pastor:</h3>
+                  <h3>Sara Forner:</h3>
                   <p>
-                    Our comments on the
-                    gastronomy dates back to 2003. He studied Hospitality in
-                    Murcia has worked in multiple fine dining restaurants
-                    in Valencia, Elche and Murcia. It's a real whirlwind as if
-                    Your best friend is the driver so you can spend a little more
-                    power chargers. If you receive it with a sound,
-                    You will guide throughout the service to live an experience.
-                    unforgettable and you will also have the security that you will be able to carry your card
-                    the occasional laugh.
+                    Graduated in Tourism. Coming from a family of restaurateurs, she didn't always want to follow in their footsteps. However, she began to fall in love with gastronomy after working at a hospitality school.
+                    She is in charge of welcoming you to our place, recommending the most exciting wines she has selected for you, and ensuring that your time at the restaurant is a memorable experience. Together with Andrés, she is the creative mind behind Nøstre and will share the stories and secrets behind our dishes, helping you enjoy your visit to the fullest.
                   </p>
                 </div>
+              </div>
 
-              </div> */}
             </div>
           </div>
         </div>
@@ -81,33 +74,32 @@ const About = ({ lenguage }) => {
     <div className="about-fullContainer">
       <div className="about-container">
         <div className="about-title" id="about">
-          <h2>Sí, somos jóvenes, pero no somos moda, ni tendencia.</h2>
-          <p>Somos el sentimiento de quienes cuando cocinan, se comprometen.</p>
+          <h2>Equipo</h2>
         </div>
         <div className="about-img">
           <div className="about-content">
-                   
-          <div className="about">
-            <figure><img src={Andres} /></figure>
-            <div className="about-data">
-              <h2>El chef: </h2>
-              <h3>Andrés Rengel</h3>
-              <p>
-                Valenciano de raíces andaluzas, castellanas y aragonesas. Tras
-                estudiar cocina, decide pasar por diferentes restaurantes de
-                estrella Michelin, como La Finca, El Celler de Can Roca, Arrea,
-                para perfeccionar sus conocimientos. Termina en la docencia,
-                dando clases de formación profesional, pero desde que se inició
-                en la cocina, había tenido el sueño de abrir su propio
-                restaurante. Nostre es la apuesta más arriesgada y personal de
-                este adicto a la gastronomía. Entre sus hobbies, está el
-                prepararse para ganar concursos de cocina, la montaña y aunque
-                lo niegue, ser todo un bailarín.
-              </p>
+
+            <div className="about">
+              <figure><img src={Andres} /></figure>
+              <div className="about-data">
+                <h2>El chef: </h2>
+                <h3>Andrés Rengel</h3>
+                <p>
+                  Valenciano de raíces andaluzas, castellanas y aragonesas. Tras
+                  estudiar cocina, decide pasar por diferentes restaurantes de
+                  estrella Michelin, como La Finca, El Celler de Can Roca, Arrea,
+                  para perfeccionar sus conocimientos. Termina en la docencia,
+                  dando clases de formación profesional, pero desde que se inició
+                  en la cocina, había tenido el sueño de abrir su propio
+                  restaurante. Nostre es la apuesta más arriesgada y personal de
+                  este adicto a la gastronomía. Entre sus hobbies, está el
+                  prepararse para ganar concursos de cocina, la montaña y aunque
+                  lo niegue, ser todo un bailarín.
+                </p>
+              </div>
+
             </div>
 
-          </div>
-         
             <div className="about">
               <figure><img src={Nadia} /></figure>
               <div className="about-data">
@@ -125,24 +117,15 @@ const About = ({ lenguage }) => {
               </div>
 
             </div>
-            {/* <div className="about">
-              <figure><img src={Alberto} /></figure>
+            <div className="about">
+              <figure><img src={Sara} /></figure>
               <div className="about-data">
-                <h3>Alberto Pastor:</h3>
+                <h3>Sara Forner:</h3>
                 <p>
-                  Sus comienzos en la
-                  gastronomía se remontan al año 2003. Estudió Hostelería en
-                  Murcia y ha trabajado en múltiples restaurantes de alta cocina
-                  en Valencia, Elche y Murcia. Es un auténtico torbellino así que
-                  su mejor aliado es el deporte para poder agotar un poco sus
-                  cargadores de energía. Siempre te recibirá con una sonrisa, te
-                  guiará durante todo el servicio para que vivas una experiencia
-                  inolvidable y además te aseguramos que será capaz de sacarte
-                  alguna que otra carcajada.
-                </p>
+                  Graduada en Turismo. De familia de hosteleros, no siempre quiso seguir sus pasos, Pero empezó a enamorarse de la gastronomía después de trabajar en una escuela de hostelería.
+                  Ella se encarga de recibiros en nuestra casa, de recomendaros los vinos más divertidos que tenga para vosotros y hacer que vuestro paso por el restaurante sea toda una experiencia. Junto a Andrés es la cabeza pensante de Nøstre y os contará todas la historias y entresijos de nuestros platos para que disfrutéis al 100% de vuestra visita.                </p>
               </div>
-
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

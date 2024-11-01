@@ -35,7 +35,6 @@ const Header = ({ onClick, lenguage  }) => {
           <div className="logo">
             <a  onClick={() => goTo('/')}>
               <h1>NOSTRE</h1>
-              <h2>Cocina que somos</h2>
             </a>
           </div>
           <div className="header-navigation">
@@ -65,7 +64,6 @@ const Header = ({ onClick, lenguage  }) => {
         <div className="logo">
           <a href="/">
             <h1>NOSTRE</h1>
-            <h2>Cocina que somos</h2>
           </a>
         </div>
         <div className="header-navigation">

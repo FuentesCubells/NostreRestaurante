@@ -3,7 +3,7 @@ import phone from "./images/Phone.png";
 import map from "./images/Map.png";
 import email from "./images/Email.png";
 
-import place from "./images/Contacto.jpg";
+import place from "./images/Contacto.jpeg";
 import { useNavigate } from "react-router-dom";
 
 const Place = ({ lenguage }) => {

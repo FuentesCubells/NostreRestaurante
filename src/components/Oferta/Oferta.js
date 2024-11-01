@@ -1,5 +1,5 @@
 import React from "react";
-import carta from "./images/Carta.jpg";
+import carta from "./images/platoOferta.jpeg";
 import menu from "./images/menu.jpg";
 import Bodega from "./images/Bodega.pdf";
 import Comida from "./images/Comida.pdf";
@@ -95,7 +95,7 @@ const Oferta = ({ lenguage }) => {
                     <li>Petit fours</li>
                   </ul>
                   <p>Price: €90 per person</p>
-                  <div className="menu-2-buttons">
+                  <div className="menu-1-buttons">
                     <button>
                       <a href="/#reservation">Make a Reservation</a>
                     </button>
@@ -110,7 +110,7 @@ const Oferta = ({ lenguage }) => {
                     <li>1 sweet course</li>
                   </ul>
                   <p>Price: €30 per person (available only Wednesday, Thursday, and Friday for lunch service)</p>
-                  <div className="menu-3-buttons">
+                  <div className="menu-1-buttons">
                     <button>
                       <a href="/#reservation">Make a Reservation</a>
                     </button>
@@ -170,7 +170,7 @@ const Oferta = ({ lenguage }) => {
               de Nostre y vivas la experiencia de la cocina que somos. <u>Los menús cambian diariamente dependiendo de la estacionalidad, productos e inspiración del equipo</u>
             </p>
             <ul className="menu-list">
-              <li className="menu-0">
+              {/* <li className="menu-0">
                 <strong className="menu-title">Menú Ørgullo:</strong>
                 <ul>
                   <li>Picnic</li>
@@ -184,7 +184,7 @@ const Oferta = ({ lenguage }) => {
                     <a href="/#reservation">Hacer una reserva</a>
                   </button>
                 </div>
-              </li>
+              </li> */}
 
               <li className="menu-1">
                 <strong className="menu-title">Menú Øportunidad:</strong>
@@ -211,7 +211,7 @@ const Oferta = ({ lenguage }) => {
                   <li>Petit fours</li>
                 </ul>
                 <p>Precio: 90€ por persona</p>
-                <div className="menu-2-buttons">
+                <div className="menu-1-buttons">
                   <button>
                     <a href="/#reservation">Hacer una reserva</a>
                   </button>
@@ -219,14 +219,15 @@ const Oferta = ({ lenguage }) => {
               </li>
 
               <li className="menu-3">
-                <strong className="menu-title">Menú Ávia:</strong>
+                <strong className="menu-title">Menú Àvia:</strong>
                 <ul>
-                  <li>Snack</li>
-                  <li>3 pases salados</li>
+                  <li>Snacks</li>
+                  <li>2 pases salados</li>
+                  <li>1 principal</li>
                   <li>1 pase dulce</li>
                 </ul>
-                <p>Precio: 30€ por persona (solo disponible miércoles, jueves y viernes en servicio de comidas)</p>
-                <div className="menu-3-buttons">
+                <p>Precio: 22,5€ por persona (solo disponible miércoles, jueves y viernes en servicio de comidas)</p>
+                <div className="menu-1-buttons">
                   <button>
                     <a href="/#reservation">Hacer una reserva</a>
                   </button>

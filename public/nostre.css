@@ -39,8 +39,7 @@ button>a:hover {
   width: auto;
   height: 100%;
 
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./images/inicio.png");
+  background: url("./images/inicio.png");
 
   background-position: center;
   background-size: cover;
@@ -151,7 +150,7 @@ button>a:hover {
   cursor: pointer;
 }
 
-.language-navigation > button {
+.language-navigation>button {
   cursor: pointer;
 }
 
@@ -401,6 +400,62 @@ button>a:hover {
 
 /*Offer*/
 
+.wine-offer {
+  max-width: 100%;
+  padding: 56px 36px;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  align-self: stretch;
+
+  background: #ce917c;
+}
+
+.wine-image>figure {
+  width: 100%;
+  height: 444px;
+  margin: 0;
+}
+
+.wine-image>figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wine-text h2{
+  margin: 0;
+  font-family: Dahlia;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #f5f5f5;
+}
+
+.wine-text p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #f5f5f5;
+}
+
+
+
+.wine-image figure {
+  width: 100%;
+}
+
+.wine-image figure img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .offer-fullContainer {
   max-width: 100%;
   padding: 56px 36px;
@@ -410,6 +465,8 @@ button>a:hover {
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
+
+  background-color: #3e5372;
 }
 
 .offer-container {
@@ -549,6 +606,8 @@ button>a:hover {
 .offer-content div button {
   padding: 12px 20px;
 
+  max-width: 250px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -569,6 +628,7 @@ button>a:hover {
   border: 2px solid #f5f5f5;
   background-color: transparent;
 }
+
 
 .modal {
   display: none;
@@ -768,11 +828,14 @@ button>a:hover {
 
   border-bottom: 2px solid #f5f5f5;
 }
+
 .about-img {
   display: flex;
   flex-direction: row;
 }
-.about h3, .about-data > h2  {
+
+.about h3,
+.about-data>h2 {
   margin: 0;
   font-family: Dahlia;
   font-size: 32px;
@@ -783,6 +846,7 @@ button>a:hover {
 
   color: #f5f5f5;
 }
+
 .about-data {
   display: flex;
   flex-direction: column;
@@ -998,17 +1062,20 @@ button>a:hover {
   white-space: nowrap;
   font-size: 24px;
 }
-.hours-information{
+
+.hours-information {
   margin-top: 10px;
   color: #f5f5f5;
 }
-.hours-information h3{
+
+.hours-information h3 {
   margin: 0;
 
   font-family: 'Dahlia';
   font-size: 16px;
 }
-.hours-information p{
+
+.hours-information p {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -1063,7 +1130,7 @@ button>a:hover {
 .menu-0>strong,
 .menu-1>strong,
 .menu-2>strong,
-.menu-3>strong  {
+.menu-3>strong {
   font-family: Dahlia;
 }
 
@@ -1106,7 +1173,7 @@ button>a:hover {
 }
 
 /*Politics Wrapper*/
-.politics-wrapper{
+.politics-wrapper {
   padding: 56px 36px;
 
   display: flex;
@@ -1118,7 +1185,7 @@ button>a:hover {
   color: #f5f5f5;
 }
 
-.politics-wrapper > h1 {
+.politics-wrapper>h1 {
   margin: 0;
 
   font-size: 36px;
@@ -1130,7 +1197,7 @@ button>a:hover {
   src: url("./assets/Dahlia-Medium.woff2") format("woff2");
 }
 
-.politics-wrapper > h2 {
+.politics-wrapper>h2 {
   margin: 0;
   font-size: 20px;
 }
@@ -1151,7 +1218,7 @@ button>a:hover {
   z-index: 9999;
 }
 
-.loader-screen  > .logo h1 {
+.loader-screen>.logo h1 {
   margin: 0;
 
   text-align: center;
@@ -1163,7 +1230,8 @@ button>a:hover {
 
   font-family: "Dahlia";
 }
-.loader-screen  > .logo > a>h1 {
+
+.loader-screen>.logo>a>h1 {
   margin: 0;
 
   font-size: 18px;
@@ -1227,7 +1295,7 @@ button>a:hover {
   }
 
   /*Politics Wrapper*/
-  .politics-wrapper{
+  .politics-wrapper {
     padding: 56px 36px;
 
     display: flex;
@@ -1239,7 +1307,7 @@ button>a:hover {
     color: #f5f5f5;
   }
 
-  .politics-wrapper > h1 {
+  .politics-wrapper>h1 {
     margin: 0;
 
     font-size: 36px;
@@ -1251,7 +1319,7 @@ button>a:hover {
     src: url("./assets/Dahlia-Medium.woff2") format("woff2");
   }
 
-  .politics-wrapper > h2 {
+  .politics-wrapper>h2 {
     margin: 0;
     font-size: 20px;
   }
@@ -1263,8 +1331,7 @@ button>a:hover {
     width: auto;
     height: 100%;
 
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("./images/inicio.png");
+    background: url("./images/mesaRestaurante.jpeg");
 
     background-position: center;
     background-size: cover;
@@ -1489,6 +1556,8 @@ button>a:hover {
     align-items: flex-start;
     gap: 10px;
     align-self: stretch;
+
+    background: #3e5372;
   }
 
   .offer-container {
@@ -1538,6 +1607,18 @@ button>a:hover {
     justify-content: space-between;
   }
 
+  .offer-title h2 {
+    margin: 0px;
+    font-family: Dahlia;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: #f5f5f5;
+  }
+
+
   .offer-img {
     height: 200px;
   }
@@ -1577,6 +1658,64 @@ button>a:hover {
   .offer-letter-buttons button:hover>a {
     color: #141414;
 
+  }
+
+  .wine-offer {
+    max-width: 100%;
+    padding: 72px 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    align-self: stretch;
+
+    background: #ce917c;
+  }
+
+  .wine-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    flex: 1;
+  }
+
+  .wine-text h2 {
+    margin: 0px;
+    font-family: Dahlia;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: #f5f5f5;
+  }
+
+  .wine-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #f5f5f5;
+  }
+
+  .wine-image {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex: 1;
+  }
+
+  .wine-image figure {
+    margin: 0;
+    width: 100%;
+  }
+
+  .wine-image figure img {
+    width: 100%;
+    object-fit: cover;
   }
 
   .modal {
@@ -1788,7 +1927,7 @@ button>a:hover {
 
   .contact-title img {
     width: 100%;
-    max-height: 300px;
+    max-height: 500px;
     height: auto;
 
     object-fit: cover;
@@ -1827,7 +1966,7 @@ button>a:hover {
   }
 
   /*Politics Wrapper*/
-  .politics-wrapper{
+  .politics-wrapper {
     max-width: 100%;
     padding: 72px 110px;
 
@@ -1841,7 +1980,7 @@ button>a:hover {
     color: #f5f5f5;
   }
 
-  .politics-wrapper > h1 {
+  .politics-wrapper>h1 {
     margin: 0;
 
     font-size: 48px;
@@ -1853,7 +1992,7 @@ button>a:hover {
     src: url("./assets/Dahlia-Medium.woff2") format("woff2");
   }
 
-  .politics-wrapper > h2 {
+  .politics-wrapper>h2 {
     margin: 0;
   }
 }
