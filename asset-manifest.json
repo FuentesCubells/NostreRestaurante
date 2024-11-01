@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/static/js/main.b32c61e5.js",
-    "static/media/Sara.jpeg": "/static/media/Sara.7eea46607e159cfcb448.jpeg",
-    "static/media/platoOferta.jpeg": "/static/media/platoOferta.7ae59ed101ffd3db628b.jpeg",
-    "static/media/andres.jpeg": "/static/media/andres.4cf31fd5993ce154b589.jpeg",
-    "static/media/nostre.jpg": "/static/media/nostre.795a0489e6c3a396d121.jpg",
-    "static/media/bodega.jpeg": "/static/media/bodega.d546c0af3476b135f94b.jpeg",
-    "static/media/nadia.jpeg": "/static/media/nadia.bcdbfe1d7d8e7a7c05a6.jpeg",
-    "static/media/Contacto.jpeg": "/static/media/Contacto.8f2da320deb78d41c722.jpeg",
-    "static/media/menu.jpg": "/static/media/menu.8743cd50d00f8fc2e232.jpg",
-    "static/media/MenuOportunidad.pdf": "/static/media/MenuOportunidad.a64e8594ad584f11b5cd.pdf",
-    "static/media/MenuOrigen.pdf": "/static/media/MenuOrigen.dfb348322b7b33dd799f.pdf",
-    "static/media/Comida.pdf": "/static/media/Comida.22327816c5ce65dd380f.pdf",
-    "static/media/Bodega.pdf": "/static/media/Bodega.9e490168c33ed2ad0ba2.pdf",
-    "index.html": "/index.html",
-    "main.b32c61e5.js.map": "/static/js/main.b32c61e5.js.map"
+    "main.js": "/NostreRestaurante/static/js/main.d57cbfcc.js",
+    "static/media/Sara.jpeg": "/NostreRestaurante/static/media/Sara.7eea46607e159cfcb448.jpeg",
+    "static/media/platoOferta.jpeg": "/NostreRestaurante/static/media/platoOferta.7ae59ed101ffd3db628b.jpeg",
+    "static/media/andres.jpeg": "/NostreRestaurante/static/media/andres.4cf31fd5993ce154b589.jpeg",
+    "static/media/nostre.jpg": "/NostreRestaurante/static/media/nostre.795a0489e6c3a396d121.jpg",
+    "static/media/bodega.jpeg": "/NostreRestaurante/static/media/bodega.d546c0af3476b135f94b.jpeg",
+    "static/media/nadia.jpeg": "/NostreRestaurante/static/media/nadia.bcdbfe1d7d8e7a7c05a6.jpeg",
+    "static/media/Contacto.jpeg": "/NostreRestaurante/static/media/Contacto.8f2da320deb78d41c722.jpeg",
+    "static/media/menu.jpg": "/NostreRestaurante/static/media/menu.8743cd50d00f8fc2e232.jpg",
+    "static/media/MenuOportunidad.pdf": "/NostreRestaurante/static/media/MenuOportunidad.a64e8594ad584f11b5cd.pdf",
+    "static/media/MenuOrigen.pdf": "/NostreRestaurante/static/media/MenuOrigen.dfb348322b7b33dd799f.pdf",
+    "static/media/Comida.pdf": "/NostreRestaurante/static/media/Comida.22327816c5ce65dd380f.pdf",
+    "static/media/Bodega.pdf": "/NostreRestaurante/static/media/Bodega.9e490168c33ed2ad0ba2.pdf",
+    "index.html": "/NostreRestaurante/index.html",
+    "main.d57cbfcc.js.map": "/NostreRestaurante/static/js/main.d57cbfcc.js.map"
   },
   "entrypoints": [
-    "static/js/main.b32c61e5.js"
+    "static/js/main.d57cbfcc.js"
   ]
 }
