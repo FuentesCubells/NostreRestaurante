@@ -87,20 +87,21 @@ const Oferta = ({ lenguage }) => {
                 </li>
 
                 <li className="menu-2">
-                  <strong className="menu-title">Ørigen Menu:</strong>
+                  <strong className="menu-title">Weekend Menu: (Only weekends)</strong>
                   <ul>
                     <li>Picnic</li>
-                    <li>8 savory courses</li>
-                    <li>2 sweet courses</li>
-                    <li>Petit fours</li>
+                    <li>2 appetizers</li>
+                    <li>1 main course</li>
+                    <li>1 dessert</li>
                   </ul>
-                  <p>Price: €90 per person</p>
+                  <p>Price: 35€ per person</p>
                   <div className="menu-1-buttons">
                     <button>
-                      <a href="/#reservation">Make a Reservation</a>
+                      <a href="/#reservation">Make a reservation</a>
                     </button>
                   </div>
                 </li>
+
 
                 <li className="menu-3">
                   <strong className="menu-title">Ávia Menu:</strong>
@@ -203,14 +204,14 @@ const Oferta = ({ lenguage }) => {
               </li>
 
               <li className="menu-2">
-                <strong className="menu-title">Menú Ørigen:</strong>
+                <strong className="menu-title">Menú Fin de Semana: (Solo fines de samena)</strong>
                 <ul>
                   <li>Picnic</li>
-                  <li>8 pases salados</li>
-                  <li>2 pases dulces</li>
-                  <li>Petit fours</li>
+                  <li>2 entrantes</li>
+                  <li>1 principal</li>
+                  <li>1 postre</li>
                 </ul>
-                <p>Precio: 90€ por persona</p>
+                <p>Precio: 35€ por persona</p>
                 <div className="menu-1-buttons">
                   <button>
                     <a href="/#reservation">Hacer una reserva</a>
@@ -222,9 +223,10 @@ const Oferta = ({ lenguage }) => {
                 <strong className="menu-title">Menú Àvia:</strong>
                 <ul>
                   <li>Snacks</li>
-                  <li>2 pases salados</li>
+                  <li>1 aperitivo</li>
+                  <li>1 entrante</li>
                   <li>1 principal</li>
-                  <li>1 pase dulce</li>
+                  <li>1 postre</li>
                 </ul>
                 <p>Precio: 22,5€ por persona (solo disponible miércoles, jueves y viernes en servicio de comidas)</p>
                 <div className="menu-1-buttons">
