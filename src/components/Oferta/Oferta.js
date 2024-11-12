@@ -1,5 +1,6 @@
 import React from "react";
 import carta from "./images/platoOferta.jpeg";
+import pdf from "./images/Carta_comida_ nostre.pdf"
 import menu from "./images/menu.jpg";
 import Bodega from "./images/Bodega.pdf";
 import Comida from "./images/Comida.pdf";
@@ -102,7 +103,6 @@ const Oferta = ({ lenguage }) => {
                   </div>
                 </li>
 
-
                 <li className="menu-3">
                   <strong className="menu-title">Ávia Menu:</strong>
                   <ul>
@@ -117,6 +117,20 @@ const Oferta = ({ lenguage }) => {
                     </button>
                   </div>
                 </li>
+
+                <li className="menu-3">
+                  <strong className="menu-title">Menu:</strong>
+                  <p>Our Menu, so you can choose your own path and experience Nøstre in your own way.</p>
+                  <div className="menu-1-buttons">
+                    <button>
+                      <a href="/#reservation">Make a Reservation</a>
+                    </button>
+                    <button>
+                      <a href={pdf} target="_blank">View the Menu</a>
+                    </button>
+                  </div>
+                </li>
+
               </ul>
 
             </div>
@@ -220,21 +234,18 @@ const Oferta = ({ lenguage }) => {
               </li>
 
               <li className="menu-3">
-                <strong className="menu-title">Menú Àvia:</strong>
-                <ul>
-                  <li>Snacks</li>
-                  <li>1 aperitivo</li>
-                  <li>1 entrante</li>
-                  <li>1 principal</li>
-                  <li>1 postre</li>
-                </ul>
-                <p>Precio: 22,5€ por persona (solo disponible miércoles, jueves y viernes en servicio de comidas)</p>
+                <strong className="menu-title">Carta:</strong>
+                <p>Nuestra Carta, para que escojas tu propio camino y vivas la experiencia de Nøstre a tu manera.</p>
                 <div className="menu-1-buttons">
                   <button>
-                    <a href="/#reservation">Hacer una reserva</a>
+                    <a href="/#reservation">Hacer una Reserva</a>
+                  </button>
+                  <button>
+                    <a href={pdf} target="_blank">Ver la Carta</a>
                   </button>
                 </div>
               </li>
+
             </ul>
 
 
