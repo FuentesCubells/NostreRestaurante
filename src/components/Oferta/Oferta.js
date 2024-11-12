@@ -107,8 +107,8 @@ const Oferta = ({ lenguage }) => {
                   <strong className="menu-title">Ávia Menu:</strong>
                   <ul>
                     <li>Snack</li>
-                    <li>3 savory courses</li>
-                    <li>1 sweet course</li>
+                    <li>1 main course of choice</li>
+                    <li>1 dessert</li>
                   </ul>
                   <p>Price: €22,5 per person (available only Wednesday, Thursday, and Friday for lunch service)</p>
                   <div className="menu-1-buttons">
@@ -185,7 +185,7 @@ const Oferta = ({ lenguage }) => {
               de Nostre y vivas la experiencia de la cocina que somos. <u>Los menús cambian diariamente dependiendo de la estacionalidad, productos e inspiración del equipo</u>
             </p>
             <ul className="menu-list">
-              
+
 
               <li className="menu-1">
                 <strong className="menu-title">Menú Øportunidad:</strong>
@@ -223,8 +223,8 @@ const Oferta = ({ lenguage }) => {
                 <strong className="menu-title">Menú Àvia:</strong>
                 <ul>
                   <li>Snack</li>
-                  <li>3 pases salados</li>
-                  <li>1 pase dulce</li>
+                  <li>1 principal a elegir</li>
+                  <li>1 postre</li>
                 </ul>
                 <p>Precio: 22,5€ por persona</p>
                 <div className="menu-0-buttons">
