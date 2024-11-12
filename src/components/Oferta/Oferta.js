@@ -110,7 +110,7 @@ const Oferta = ({ lenguage }) => {
                     <li>3 savory courses</li>
                     <li>1 sweet course</li>
                   </ul>
-                  <p>Price: €30 per person (available only Wednesday, Thursday, and Friday for lunch service)</p>
+                  <p>Price: €22,5 per person (available only Wednesday, Thursday, and Friday for lunch service)</p>
                   <div className="menu-1-buttons">
                     <button>
                       <a href="/#reservation">Make a Reservation</a>
@@ -226,7 +226,7 @@ const Oferta = ({ lenguage }) => {
                   <li>3 pases salados</li>
                   <li>1 pase dulce</li>
                 </ul>
-                <p>Precio: 30€ por persona</p>
+                <p>Precio: 22,5€ por persona</p>
                 <div className="menu-0-buttons">
                   <button>
                     <a href="/#reservation">Hacer una reserva</a>
