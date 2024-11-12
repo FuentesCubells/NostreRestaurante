@@ -107,6 +107,7 @@ const Oferta = ({ lenguage }) => {
                   <strong className="menu-title">Ávia Menu:</strong>
                   <ul>
                     <li>Snack</li>
+                    <li>1 appetizer</li>
                     <li>1 main course of choice</li>
                     <li>1 dessert</li>
                   </ul>
@@ -223,6 +224,7 @@ const Oferta = ({ lenguage }) => {
                 <strong className="menu-title">Menú Àvia:</strong>
                 <ul>
                   <li>Snack</li>
+                  <li>1 entrante</li>
                   <li>1 principal a elegir</li>
                   <li>1 postre</li>
                 </ul>
