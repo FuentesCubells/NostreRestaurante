@@ -55,7 +55,7 @@ const Oferta = ({ lenguage }) => {
                 <u>The menus change according to the offer and season.</u>
               </p>
               <ul className="menu-list">
-                <li className="menu-0">
+                {/* <li className="menu-0">
                   <strong className="menu-title">Ørgullo Menu:</strong>
                   <ul>
                     <li>Picnic</li>
@@ -69,7 +69,7 @@ const Oferta = ({ lenguage }) => {
                       <a href="/#reservation">Make a Reservation</a>
                     </button>
                   </div>
-                </li>
+                </li> */}
 
                 <li className="menu-1">
                   <strong className="menu-title">Oportunidad Menu:</strong>
@@ -185,21 +185,7 @@ const Oferta = ({ lenguage }) => {
               de Nostre y vivas la experiencia de la cocina que somos. <u>Los menús cambian diariamente dependiendo de la estacionalidad, productos e inspiración del equipo</u>
             </p>
             <ul className="menu-list">
-              {/* <li className="menu-0">
-                <strong className="menu-title">Menú Ørgullo:</strong>
-                <ul>
-                  <li>Picnic</li>
-                  <li>5 pases salados</li>
-                  <li>1 pase dulce</li>
-                  <li>Petit fours</li>
-                </ul>
-                <p>Precio: 60€ por persona</p>
-                <div className="menu-0-buttons">
-                  <button>
-                    <a href="/#reservation">Hacer una reserva</a>
-                  </button>
-                </div>
-              </li> */}
+              
 
               <li className="menu-1">
                 <strong className="menu-title">Menú Øportunidad:</strong>
@@ -218,7 +204,7 @@ const Oferta = ({ lenguage }) => {
               </li>
 
               <li className="menu-2">
-                <strong className="menu-title">Menú Fin de Semana: (Solo fines de samena)</strong>
+                <strong className="menu-title">Menú Fin de Semana: (Solo fines de semana)</strong>
                 <ul>
                   <li>Picnic</li>
                   <li>2 entrantes</li>
@@ -227,6 +213,21 @@ const Oferta = ({ lenguage }) => {
                 </ul>
                 <p>Precio: 35€ por persona</p>
                 <div className="menu-1-buttons">
+                  <button>
+                    <a href="/#reservation">Hacer una reserva</a>
+                  </button>
+                </div>
+              </li>
+
+              <li className="menu-3">
+                <strong className="menu-title">Menú Àvia:</strong>
+                <ul>
+                  <li>Snack</li>
+                  <li>3 pases salados</li>
+                  <li>1 pase dulce</li>
+                </ul>
+                <p>Precio: 30€ por persona</p>
+                <div className="menu-0-buttons">
                   <button>
                     <a href="/#reservation">Hacer una reserva</a>
                   </button>
