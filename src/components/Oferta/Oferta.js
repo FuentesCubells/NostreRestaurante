@@ -1,6 +1,6 @@
 import React from "react";
 import carta from "./images/platoOferta.jpeg";
-import pdf from "./images/Carta_comida_ nostre.pdf"
+import pdf from "./images/CartaNostre.pdf"
 import menu from "./images/menu.jpg";
 import Bodega from "./images/Bodega.pdf";
 import Comida from "./images/Comida.pdf";
@@ -71,31 +71,30 @@ const Oferta = ({ lenguage }) => {
                   </div>
                 </li> */}
 
-                <li className="menu-1">
-                  <strong className="menu-title">Oportunidad Menu:</strong>
+                <li className="menu-3">
+                  <strong className="menu-title">Àvia Menu: (available only on Monday, Thursday, and Friday at lunchtime)</strong>
                   <ul>
-                    <li>Picnic</li>
-                    <li>6 savory courses</li>
-                    <li>2 sweet courses</li>
-                    <li>Petit fours</li>
+                    <li>Snack</li>
+                    <li>2 starter</li>
+                    <li>1 main course of your choice</li>
+                    <li>1 dessert</li>
                   </ul>
-                  <p>Price: €75 per person</p>
-                  <div className="menu-1-buttons">
+                  <p>Price: €30 per person</p>
+                  <div className="menu-0-buttons">
                     <button>
-                      <a href="/#reservation">Make a Reservation</a>
+                      <a href="/#reservation">Make a reservation</a>
                     </button>
                   </div>
                 </li>
 
-                <li className="menu-2">
-                  <strong className="menu-title">Weekend Menu: (Only weekends)</strong>
+                <li className="menu-3">
+                  <strong className="menu-title">NØSTRE Menu:</strong>
                   <ul>
                     <li>Picnic</li>
-                    <li>2 appetizers</li>
-                    <li>1 main course</li>
-                    <li>1 dessert</li>
+                    <li>4 savory courses</li>
+                    <li>1 sweet course</li>
                   </ul>
-                  <p>Price: 35€ per person</p>
+                  <p>Price: €47 per person</p>
                   <div className="menu-1-buttons">
                     <button>
                       <a href="/#reservation">Make a reservation</a>
@@ -104,20 +103,51 @@ const Oferta = ({ lenguage }) => {
                 </li>
 
                 <li className="menu-3">
-                  <strong className="menu-title">Ávia Menu:</strong>
+                  <strong className="menu-title">Ørigen Menu:</strong>
                   <ul>
-                    <li>Snack</li>
-                    <li>1 appetizer</li>
-                    <li>1 main course of choice</li>
-                    <li>1 dessert</li>
+                    <li>Picnic</li>
+                    <li>5 savory courses</li>
+                    <li>1 sweet course</li>
                   </ul>
-                  <p>Price: €22,5 per person (available only Wednesday, Thursday, and Friday for lunch service)</p>
-                  <div className="menu-1-buttons">
+                  <p>Price: €56 per person</p>
+                  <div className="menu-0-buttons">
                     <button>
-                      <a href="/#reservation">Make a Reservation</a>
+                      <a href="/#reservation">Make a reservation</a>
                     </button>
                   </div>
                 </li>
+
+                <li className="menu-1">
+                  <strong className="menu-title">Opportunity Menu:</strong>
+                  <ul>
+                    <li>Picnic</li>
+                    <li>6 savory courses</li>
+                    <li>2 sweet courses</li>
+                  </ul>
+                  <p>Price: €75 per person</p>
+                  <div className="menu-1-buttons">
+                    <button>
+                      <a href="/#reservation">Make a reservation</a>
+                    </button>
+                  </div>
+                </li>
+
+                <li className="menu-2">
+                  <strong className="menu-title">Festival Menu</strong>
+                  <ul>
+                    <li>Picnic</li>
+                    <li>8 savory courses</li>
+                    <li>2 sweet courses</li>
+                  </ul>
+                  <p>Price: €95 per person</p>
+                  <div className="menu-1-buttons">
+                    <button>
+                      <a href="/#reservation">Make a reservation</a>
+                    </button>
+                  </div>
+                </li>
+
+
 
                 <li className="menu-3">
                   <strong className="menu-title">Menu:</strong>
@@ -127,7 +157,7 @@ const Oferta = ({ lenguage }) => {
                       <a href="/#reservation">Make a Reservation</a>
                     </button>
                     <button>
-                      <a href={pdf} target="_blank">View the Menu</a>
+                      <a href={'https://www.canva.com/design/DAGUM3s1Xyw/YjdjXHvbNIkre8X5WapZ8g/view?utm_content=DAGUM3s1Xyw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h81a2d76971#1'} target="_blank">View the Menu</a>
                     </button>
                   </div>
                 </li>
@@ -188,13 +218,58 @@ const Oferta = ({ lenguage }) => {
             <ul className="menu-list">
 
 
+              <li className="menu-3">
+                <strong className="menu-title">Menú Àvia: (solo disponible Lunes, Jueves y Viernes a mediodía)</strong>
+                <ul>
+                  <li>Snack</li>
+                  <li>2 entrante</li>
+                  <li>1 principal a elegir</li>
+                  <li>1 postre</li>
+                </ul>
+                <p>Precio: 30€ por persona</p>
+                <div className="menu-0-buttons">
+                  <button>
+                    <a href="/#reservation">Hacer una reserva</a>
+                  </button>
+                </div>
+              </li>
+
+              <li className="menu-3">
+                <strong className="menu-title">Menú NØSTRE:</strong>
+                <ul>
+                  <li>Picnic</li>
+                  <li>4 pases salados</li>
+                  <li>1 pases dulces</li>
+                </ul>
+                <p>Precio: 47€ por persona</p>
+                <div className="menu-1-buttons">
+                  <button>
+                    <a href="/#reservation">Hacer una reserva</a>
+                  </button>
+                </div>
+              </li>
+
+              <li className="menu-3">
+                <strong className="menu-title">Menú Ørigen:</strong>
+                <ul>
+                  <li>Picnic</li>
+                  <li>5 platos salados</li>
+                  <li>1 plato dulce</li>
+                </ul>
+                <p>Precio: €56 por persona</p>
+                <div className="menu-0-buttons">
+                  <button>
+                    <a href="/#reservation">Hacer una reserva</a>
+                  </button>
+                </div>
+              </li>
+
               <li className="menu-1">
                 <strong className="menu-title">Menú Øportunidad:</strong>
                 <ul>
                   <li>Picnic</li>
                   <li>6 pases salados</li>
                   <li>2 pases dulces</li>
-                  <li>Petit fours</li>
                 </ul>
                 <p>Precio: 75€ por persona</p>
                 <div className="menu-1-buttons">
@@ -205,14 +280,13 @@ const Oferta = ({ lenguage }) => {
               </li>
 
               <li className="menu-2">
-                <strong className="menu-title">Menú Fin de Semana: (Solo fines de semana)</strong>
+                <strong className="menu-title">Menú Festival</strong>
                 <ul>
                   <li>Picnic</li>
-                  <li>2 entrantes</li>
-                  <li>1 principal</li>
-                  <li>1 postre</li>
+                  <li>8 pases salados</li>
+                  <li>2 pases dulces</li>
                 </ul>
-                <p>Precio: 35€ por persona</p>
+                <p>Precio: 95€ por persona</p>
                 <div className="menu-1-buttons">
                   <button>
                     <a href="/#reservation">Hacer una reserva</a>
@@ -220,21 +294,6 @@ const Oferta = ({ lenguage }) => {
                 </div>
               </li>
 
-              <li className="menu-3">
-                <strong className="menu-title">Menú Àvia:</strong>
-                <ul>
-                  <li>Snack</li>
-                  <li>1 entrante</li>
-                  <li>1 principal a elegir</li>
-                  <li>1 postre</li>
-                </ul>
-                <p>Precio: 22,5€ por persona</p>
-                <div className="menu-0-buttons">
-                  <button>
-                    <a href="/#reservation">Hacer una reserva</a>
-                  </button>
-                </div>
-              </li>
 
               <li className="menu-3">
                 <strong className="menu-title">Carta:</strong>
@@ -244,7 +303,7 @@ const Oferta = ({ lenguage }) => {
                     <a href="/#reservation">Hacer una Reserva</a>
                   </button>
                   <button>
-                    <a href={pdf} target="_blank">Ver la Carta</a>
+                    <a href={'https://www.canva.com/design/DAGUM3s1Xyw/YjdjXHvbNIkre8X5WapZ8g/view?utm_content=DAGUM3s1Xyw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h81a2d76971#1'} target="_blank">Ver la Carta</a>
                   </button>
                 </div>
               </li>

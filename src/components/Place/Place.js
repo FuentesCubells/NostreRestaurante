@@ -54,9 +54,9 @@ const Place = ({ lenguage }) => {
                 </div>
                 <div className="hours-information">
                   <h3>Hours:</h3>
-                  <p>Monday and Sunday: 1:30 PM - 4:30 PM</p>
-                  <p>Tuesday and Wednesday: Closed</p>
+                  <p>Monday: 1:30 PM - 4:30 PM</p>
                   <p>Thursday to Saturday: 1:30 PM - 4:00 PM / 8:30 PM - 11:00 PM</p>
+                  <p>Tuesday, Wednesday, Sunday: Closed</p>
                 </div>
 
 
@@ -119,8 +119,8 @@ const Place = ({ lenguage }) => {
               <div className="hours-information">
                 <h3>Horario:</h3>
                 <p>Lunes y Domingos de 13:30 - 16:30 </p>
-                <p>Martes y miércoles cerrado</p>
                 <p>Jueves a Sábado: 13:30 - 16:00 / 20:30 - 23:00</p>
+                <p>Martes, Miércoles y Domingos cerrado</p>
               </div>
               <div className="policy-links">
                 <p>
