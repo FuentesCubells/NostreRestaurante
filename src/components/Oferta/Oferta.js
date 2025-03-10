@@ -79,7 +79,7 @@ const Oferta = ({ lenguage }) => {
                     <li>1 main course of your choice</li>
                     <li>1 dessert</li>
                   </ul>
-                  <p>Price: €30 per person</p>
+                  <p>Price: €37 per person</p>
                   <div className="menu-0-buttons">
                     <button>
                       <a href="/#reservation">Make a reservation</a>
@@ -87,7 +87,7 @@ const Oferta = ({ lenguage }) => {
                   </div>
                 </li>
 
-                <li className="menu-3">
+                {/* <li className="menu-3">
                   <strong className="menu-title">NØSTRE Menu:</strong>
                   <ul>
                     <li>Picnic</li>
@@ -100,7 +100,7 @@ const Oferta = ({ lenguage }) => {
                       <a href="/#reservation">Make a reservation</a>
                     </button>
                   </div>
-                </li>
+                </li> */}
 
                 <li className="menu-3">
                   <strong className="menu-title">Ørigen Menu:</strong>
@@ -109,7 +109,7 @@ const Oferta = ({ lenguage }) => {
                     <li>5 savory courses</li>
                     <li>1 sweet course</li>
                   </ul>
-                  <p>Price: €56 per person</p>
+                  <p>Price: €60 per person</p>
                   <div className="menu-0-buttons">
                     <button>
                       <a href="/#reservation">Make a reservation</a>
@@ -149,7 +149,7 @@ const Oferta = ({ lenguage }) => {
 
 
 
-                <li className="menu-3">
+                {/* <li className="menu-3">
                   <strong className="menu-title">Menu:</strong>
                   <p>Our Menu, so you can choose your own path and experience Nøstre in your own way.</p>
                   <div className="menu-1-buttons">
@@ -160,7 +160,7 @@ const Oferta = ({ lenguage }) => {
                       <a href={'https://www.canva.com/design/DAGUM3s1Xyw/YjdjXHvbNIkre8X5WapZ8g/view?utm_content=DAGUM3s1Xyw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h81a2d76971#1'} target="_blank">View the Menu</a>
                     </button>
                   </div>
-                </li>
+                </li> */}
 
               </ul>
 
@@ -226,7 +226,7 @@ const Oferta = ({ lenguage }) => {
                   <li>1 principal a elegir</li>
                   <li>1 postre</li>
                 </ul>
-                <p>Precio: 30€ por persona</p>
+                <p>Precio: 37€ por persona</p>
                 <div className="menu-0-buttons">
                   <button>
                     <a href="/#reservation">Hacer una reserva</a>
@@ -234,7 +234,7 @@ const Oferta = ({ lenguage }) => {
                 </div>
               </li>
 
-              <li className="menu-3">
+              {/* <li className="menu-3">
                 <strong className="menu-title">Menú NØSTRE:</strong>
                 <ul>
                   <li>Picnic</li>
@@ -247,7 +247,7 @@ const Oferta = ({ lenguage }) => {
                     <a href="/#reservation">Hacer una reserva</a>
                   </button>
                 </div>
-              </li>
+              </li> */}
 
               <li className="menu-3">
                 <strong className="menu-title">Menú Ørigen:</strong>
@@ -256,7 +256,7 @@ const Oferta = ({ lenguage }) => {
                   <li>5 platos salados</li>
                   <li>1 plato dulce</li>
                 </ul>
-                <p>Precio: €56 por persona</p>
+                <p>Precio: €60 por persona</p>
                 <div className="menu-0-buttons">
                   <button>
                     <a href="/#reservation">Hacer una reserva</a>
@@ -286,7 +286,7 @@ const Oferta = ({ lenguage }) => {
                   <li>8 pases salados</li>
                   <li>2 pases dulces</li>
                 </ul>
-                <p>Precio: 95€ por persona</p>
+                <p>Precio: 90€ por persona</p>
                 <div className="menu-1-buttons">
                   <button>
                     <a href="/#reservation">Hacer una reserva</a>
@@ -295,7 +295,7 @@ const Oferta = ({ lenguage }) => {
               </li>
 
 
-              <li className="menu-3">
+              {/* <li className="menu-3">
                 <strong className="menu-title">Carta:</strong>
                 <p>Nuestra Carta, para que escojas tu propio camino y vivas la experiencia de Nøstre a tu manera.</p>
                 <div className="menu-1-buttons">
@@ -306,7 +306,7 @@ const Oferta = ({ lenguage }) => {
                     <a href={'https://www.canva.com/design/DAGUM3s1Xyw/YjdjXHvbNIkre8X5WapZ8g/view?utm_content=DAGUM3s1Xyw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h81a2d76971#1'} target="_blank">Ver la Carta</a>
                   </button>
                 </div>
-              </li>
+              </li> */}
 
             </ul>
 

@@ -21,7 +21,7 @@ const Place = ({ lenguage }) => {
             <h2>Where Will You Find Us?</h2>
             <img
               src={place}
-              alt="an image of the restaurant in front of the Central Market"
+              alt="the restaurant in front of the Central Market"
             />
           </div>
           <div className="contact-content">
@@ -54,9 +54,11 @@ const Place = ({ lenguage }) => {
                 </div>
                 <div className="hours-information">
                   <h3>Hours:</h3>
-                  <p>Monday: 1:30 PM - 4:30 PM</p>
-                  <p>Thursday to Saturday: 1:30 PM - 4:00 PM / 8:30 PM - 11:00 PM</p>
-                  <p>Tuesday, Wednesday, Sunday: Closed</p>
+                  <p>Monday: 2:00 PM - 2:30 PM</p>
+                  <p>Thursday to Saturday: 2:00 PM - 2:30 PM / 9:00 PM - 9:30 PM</p>
+                  <p>Sunday: 2:00 PM - 2:30 PM</p>
+                  <p>Tuesday, Wednesday: Closed</p>
+                  <p>Last Sunday of the month: Closed</p>
                 </div>
 
 
@@ -118,10 +120,13 @@ const Place = ({ lenguage }) => {
               </div>
               <div className="hours-information">
                 <h3>Horario:</h3>
-                <p>Lunes y Domingos de 13:30 - 16:30 </p>
-                <p>Jueves a Sábado: 13:30 - 16:00 / 20:30 - 23:00</p>
-                <p>Martes, Miércoles y Domingos cerrado</p>
+                <p>Lunes: 14:00 - 14:30</p>
+                <p>Jueves a sábado: 14:00 - 14:30 / 21:00 - 21:30</p>
+                <p>Domingo: 14:00 - 14:30 </p>
+                <p>Martes, miércoles: Cerrado</p>
+                <p>Último domingo del mes: Cerrado</p>
               </div>
+
               <div className="policy-links">
                 <p>
                   <a onClick={() => goTo('/privacy-policy')}>Política de Privacidad</a>

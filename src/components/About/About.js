@@ -36,7 +36,7 @@ const About = ({ lenguage }) => {
                   </p>
                 </div>
               </div>
-              <div className="about">
+              {/* <div className="about">
                 <figure><img src={Nadia} /></figure>
                 <div className="about-data">
                   <h3>Nadia Abramova:</h3>
@@ -52,7 +52,7 @@ const About = ({ lenguage }) => {
                   </p>
                 </div>
 
-              </div>
+              </div> */}
               <div className="about">
                 <figure><img src={Sara} alt="Sara Forner" /></figure>
                 <div className="about-data">
@@ -100,7 +100,7 @@ const About = ({ lenguage }) => {
 
             </div>
 
-            <div className="about">
+            {/* <div className="about">
               <figure><img src={Nadia} /></figure>
               <div className="about-data">
                 <h3>Nadia Abramova:</h3>
@@ -116,7 +116,7 @@ const About = ({ lenguage }) => {
                 </p>
               </div>
 
-            </div>
+            </div> */}
             <div className="about">
               <figure><img src={Sara} /></figure>
               <div className="about-data">
